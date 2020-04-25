@@ -1,0 +1,132 @@
+\documentclass[conference,a4paper]{IEEEtran}
+
+% Escritura mejorada de fórmulas matemáticas
+\usepackage{amsmath}
+% Inserción de gráficos
+\usepackage{graphicx}
+% Escritura de pseudocódigo
+\usepackage[kw]{pseudo}
+% Escritura mejorada de tablas
+\usepackage{booktabs}
+% Escritura mejorada de citas bibliográficas
+\usepackage{cite}
+% Hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
+% Macros traducidas
+\def\contentsname{Índice general}
+\def\listfigurename{Índice de figuras}
+\def\listtablename{Índice de tablas}
+\def\refname{Referencias}
+\def\indexname{Índice alfabético}
+\def\figurename{Fig.}
+\def\tablename{TABLA}
+\def\partname{Parte}
+\def\appendixname{Apéndice}
+\def\abstractname{Resumen}
+% IEEE specific names
+\def\IEEEkeywordsname{Palabras clave}
+\def\IEEEproofname{Demostración}
+
+%Título
+\title{Clustering con Incertidumbre}
+
+%Autores
+\author
+{
+	\IEEEauthorblockN{Víctor Muñoz Ramírez}
+	\IEEEauthorblockA
+	{
+		\textit{Dpto. Ciencias de la Computación e Inteligencia Artificial}\\
+		\textit{Universidad de Sevilla}\\
+		Sevilla, España\\
+		vicmunram@us.es
+	}
+	\and	
+	\IEEEauthorblockN{Enrique Reina Gutiérrez}
+	\IEEEauthorblockA
+	{
+		\textit{Dpto. Ciencias de la Computación e Inteligencia Artificial}\\
+		\textit{Universidad de Sevilla}\\
+		Sevilla, España\\
+		enrreigut@us.es
+	}
+}
+
+\begin{document}
+\maketitle
+
+%Investigación Kike
+
+\section{Investigación Kike}
+
+Según la  \hyperref[bib:georgeSeif]{Referencia 1}: \\ 
+
+Empieza con una pequeña introducción respecto a  lo que que es Clustering en Machine Learning. Una técninca para poder separar un conjunto de puntos dados. Estos puntos deben de poseer algún tipo de caracteristica común que nos permita poder indentificar unos de otros y así poder agruparlos.\\
+
+Habla de 5 técnicas de algoritmos de Clustering: K-Means, Mean-Shift, Density-Bases Spatial con Ruido, Expectation-Maximization (EM) usando mezcla de modelos Gaussianos (GMM) y Agglomerative Hierarchical Clustering. Cada uno presenta sus ventajas y desventajas, que ire desarollando a lo largo de los siguientes puntos:\\
+
+K-Means:\\
+
+Este es el algoritmo que es presentado en las transparecias de teoría. Según el artículo es uno de los métodos mas fácil de implementar y de entender.  Lo primordialment destacable es que el input inicial es tuyo, es decir, debes primero observar los datos y tratar de indentificar el posible número o cantidad  de grupos(clústeres) que puedes identificar según las densidades de los puntos.\\
+
+Este algorimos consiste, en como ya se menciono anterioirmente, seleccionar tantos puntos considerados como centros de los clusters que considermaos que hay según lla representación dimensional de los datos. El algoritmo es iterativo, es decir, con cada iteración los centros se van desplazando de forma que se sitúen en el centro de cada clúster. Esto se consigue midiendo la distancia de los puntos con cada centro para ver a cual corresponden.\\
+
+La ventaja de este método es que un algoritmo que es considerado bastante rápido con un complejidad de $\mathcal{O}(n)$. Sin embargo partes con la premisa de que debes seleccionar cuantos grupos de clúster quieres. Esta decisión no siempre es trivial. Una alternativa es realziar aproximaciones como en función de la cantidad de puntos,  introducir \textit{x} centros pero esto puede provocar resultados difrerentes, por ende resutlando en una falta de consistencia.\\
+
+Otra posible optimización de este algoritmo es ahorrarnos el tener que situar los puntos manualmente y simplemente indicar cuantos queremos. Esto suele realizarse mediante la inicialización aleatoria de estos puntos, no obstante, volvemos a encontrarnos con el problemas de la falta de consistencia.\\
+
+La Referencia ofrece una alternativa a K-Means conocida como K-Medians. La principal diferencia es que a la horta de recomputar los centros nos basamos en la mediana y no en la media. Este método es menos sensitivo a valroes atípicos sin emaego es más cosotoso de forma computacional ya que requiere \textit{sorting} para computar la mediana del vector de los datos.\\
+
+Mean-Shift:\\
+
+Este algoritmo es un algoritmo basado en enventanado que trata de encontrar las areas mas densas de puntos con el fin de determinar el centro de los clusters de puntos dados. Este algoritmo es denominado en inglés como \textit{centroid-base algorithym}. Esto nos describe la función de este algoritmo la cual es encontrar el centro de los clusters formado por el conjunto de puntos dados en funcion de la densidad de estos.\\
+
+El funcionamiento de este algoritmo es sencillo. Lo primero que se hacer es inicializar un punto de forma aleatoria en el espacio de puntos con un radio de busqueda. La superficie cubierta por el círculo (ventana circular la cual se le conoce como \textit{kernel}) se encarga de contar los puntos incluidos en este. El vector dirección en el que se mueve se hace en función del centro de masa, es decir, donde se vayan concentrando los puntos.\\
+
+La forma en la que este algoritmo converge, es que en vez de inicializar una única ventana, se inicializan varias distribuidas de forma uniforme por el espacio de puntos. Vamos iterando hasta  que las distancia entre el centro de las ventanas sean cubiertas por todas.\\
+
+La ventanja de este algoritmo respecto a K-Means es que no requerimos de indicar el número de centros que vamos a querer, si no que se detectan solos basados en la desidad de puntos, sin embargo esta ventaja que presenta puede llegar a ser una desventaja. Este método es perfecto para encontrar el centro de los puntos que formen parte de clusters que esten separados y sean densos. En el escenario de que los cluster conformen figuras, tipo el perímetro de un círculo, el algoritmo puede que no agrupe los puntos en único conjunto, sino que haga un subdivisión de estos. Otra desventaja que presenta es que se deben escoger la longitud del radio resultando factor determinista que puede provocar diferentes resultados.\\
+
+Density-Based Spatial Clustering con ruidos (DBSCAN):\\
+
+Este algoritmo también esta basado en la agrupación de los puntos en función de su densidad. La gran diferencia que presenta respecto a Mean-Shift es que no trata de localizar el centro del conjunto de los puntos, si no que va generando a agrupación al vuelo.\\
+
+El funcionamiento del algoritmo es muy simple. Sen encarga de ir recorriendo todos los puntos del conjunto de puntos y mira en un radio alrededor de este. Si se encuentra un punto dentro de este radio, se le asigna como parte del clúster. Los puntos que se leen, se marcan como visitados. En el momento que ha acabdo de "agrupar un conjunto de puntos" pasa al siguiente en la lista de puntos .\\
+
+Este algoritmo presenta ventajas respecto a K-Means ya que como en Mean-Shift no es necesario indicar de antemano el número de agrupaciones que identificamos o vamos a querer, además de  que a difrencia de Mean-Shift es capaz dde identificar figuras. Sin embargo, también tiene su desventaja la cual es que requiere cierta distancia mínima entre los puntos para poder agrupar todo en la misma figura, ya que la distancia a la que miramos, conocida como Epsilon, varía en función de la densidad de puntos en esa zona.\\
+
+El artículo habla de otros dos algoritmos los cuales no consideranmos relevantes para el objetivo que se nos propone pero consideramos que son muy interesantes  y presentan alternativas a la hora de agrupar diferentes grupos de puntos.\\
+
+De momento las técnicas de \textit{clustering} presentadas, como hemos redactado, tienen sus ventajas y desventajas en las cuales nos basaremos para tratar el tema de nuestro objetivo. El principal porblema encontrado es que en función de la distribución de puntos, conviene más una técnica que otra de forma que la dificultad se encuentra en automatizar la clasificación de los puntos de forma que siempre se use la técnica más efectiva para agrupar puntos.\\
+
+Contando con la desventaja presentada anteriormente, igualemente debemos de elaborar un algoritmo que ataje el problema propuesto. Tras la investigación realziada hasta el momento, creemos que DBSCAN es la opción más factible, sin embargo tenemos en  mente el problema de que requiere cierta densidad de puntos que conformen la circunferencia. Por ello, la siguiente idea propuesta es realizar una mezcla entre K-Means y Mean-Shift. El objetivo es inicializar una cierta cantidad de centro de forma que estos cubran todo el espacio de puntos y luego vamos aproximando los centros por iteración como en K-Means. La condición de parada sería cuano estos centros convergan. \\
+
+Creemos que K-Means es la segunda mejor opción ya que el algoritmo como su nombre indica, no esta basado en la debsidad de puntos, sino en la media de la posición de esto. Esto nos interesa ya que las circufenrencias generalmente lo puntos estarán distribuidos de forma que en el centro de esta no exista ningún punto salvo que se colapse con otra circunferencia. Estos caso específicos serán estudiados con mayor precisión en el estudio del problema.\\
+
+% Glosario
+%clustering
+%clúster, clústeres 
+%sorting
+
+%Bibliografía
+
+\clearpage
+\begin{thebibliography}{9}
+	
+	\bibitem{georgeSeif}
+	\label{bib:georgeSeif}
+	Seif, G., 2020. The 5 Clustering Algorithms Data Scientists Need To Know. [online] Medium. 
+	Available at: \href{https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68}{https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68}
+	[Accessed 18 April 2020].
+
+\end{thebibliography}
+
+\end{document}
