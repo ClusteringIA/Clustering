@@ -1,0 +1,28 @@
+(Kike)
+-Introduccion:
+	- De que va nuestro trabajo
+	- Información obtenida de referencias aplicada al trabajo
+
+-Estructura del trabajo:
+	(Vekto)
+	- Estructura seguida y por qué:
+		- Punto, Cluster, Canvas, Generador de Ejemplos  DataSet y representación
+		- Estrucura propuesta por ellos primero nivel básico (primero baricentro y luego circuncentro) y luego el avanzado
+		-Mejoras:
+			- Una UI
+			- Lista de Mejoras (pseudocódigo opcional)
+
+	(Kike)
+	- Elementos implmentados que se descartaron: 3 puntos alejado circunferencia (un pelín de pseudocódigo mama mio), 'bc' y por último método iterativo
+	- Metodología implementada: De todas destacamos Point, Circle, ClusteringSolver y Solution
+
+(Kike y Vekto): 10 cada uno:
+- Experimentación
+	- Pillar fotitos y comentar resultados
+(Kike y Vekto toguether en discord)
+- Conclusiones
+	- Circuncentro < precisión mejores resultados, no comparte bien (más clusters que los que hay), con menos clusters la resta la ahce bien y el resto se comparte. con mucho ruido lo intenta
+	- Baricentro > precisión, más rápido pero menor preciso, comparte mejor porque funcion por densidad, peca de generoso, con mucho ruido se la saca
+	- El algoritmo final deberia ser baricentro + ultima iteración == circuncentro por generación --> no tan óptimo pero aprovechamos la velocidad del baricentro, circulos concentricos es cosas del destino
+
+- Bibliografía
