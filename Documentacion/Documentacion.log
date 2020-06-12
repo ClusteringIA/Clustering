@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.26)  9 JUN 2020 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.6.11)  11 JUN 2020 22:26
 entering extended mode
 **./Documentacion.tex
 (Documentacion.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-04-06>
+L3 programming layer <2020-03-06>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ieeetran\IEEEtran.cls"
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -195,7 +195,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/pseudo\pseudo.sty"
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-04-06 L3 programming layer (loader) 
+Package: expl3 2020-03-06 L3 programming layer (loader) 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
@@ -542,7 +542,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[1{C:/Users/enri8/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{C:/Users/ENRIQUE/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -601,7 +601,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 122--124
+[]\OT1/ptm/m/n/10 En primer lu-gar, se de-cidi[]o im-ple-men-tar las clases
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 122--124
+\OT1/ptm/m/n/10 ejem-p-los y rep-re-sentaci[]on gr[]afica de es-tos mis-mos. El
+
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 122--124
+\OT1/ptm/m/n/10 De este modo, se im-ple-men-taron las clases Point y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 125--126
+[]\OT1/ptm/m/n/10 A con-tin-uaci[]on, se re-aliz[]o la im-ple-mentaci[]on de lo
+s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 142--146
+\OT1/ptm/m/n/10 Cabe destacar que du-rante la ex-per-i-mentaci[]on con el
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 142--146
+\OT1/ptm/m/n/10 al-go-ritmo fi-nal, en oca-siones al in-ten-tar nor-malizar se
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 142--146
+\OT1/ptm/m/n/10 pro-duc[]an di-vi-siones por cero; lo cual fue sol-ven-tado
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 142--146
+\OT1/ptm/m/n/10 Thresh-old-Val-ues, ya men-cionado antes. Adem[]as de esta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+[4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
 \OT1/ptm/m/n/8 5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68
 [][]
  []
@@ -617,43 +718,37 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
-[3
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+[5
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (Documentacion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
-
-
-Package rerunfilecheck Warning: File `Documentacion.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Documentacion.out':
-(rerunfilecheck)             Before: 6B33BDD4E1F69DFAFC2BAD2226DD37CB;105
-(rerunfilecheck)             After:  7AEBA2FF6FA5B2FC3638D2DB4CC46ABF;103.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+Package rerunfilecheck Info: File `Documentacion.out' has not changed.
+(rerunfilecheck)             Checksum: 7DD3677082883F4A473DBF860B0B2B9F;161.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 8033 strings out of 480930
- 131117 string characters out of 2909547
- 411589 words of memory out of 3000000
- 23777 multiletter control sequences out of 15000+200000
- 559956 words of font info for 72 fonts, out of 3000000 for 9000
+ 8038 strings out of 480934
+ 130999 string characters out of 2909676
+ 415687 words of memory out of 3000000
+ 23775 multiletter control sequences out of 15000+200000
+ 561063 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,8n,43p,759b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
-times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on Documentacion.pdf (3 pages, 66396 bytes).
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Documentacion.pdf (5 pages, 93704 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

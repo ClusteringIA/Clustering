@@ -111,6 +111,54 @@ Contando con la desventaja presentada anteriormente, igualemente debemos de elab
 
 Creemos que K-Means es la segunda mejor opción ya que el algoritmo como su nombre indica, no esta basado en la debsidad de puntos, sino en la media de la posición de esto. Esto nos interesa ya que las circufenrencias generalmente lo puntos estarán distribuidos de forma que en el centro de esta no exista ningún punto salvo que se colapse con otra circunferencia. Estos caso específicos serán estudiados con mayor precisión en el estudio del problema.\\
 
+\clearpage
+
+%Estructura del proyecto
+
+\section{Estructura del proyecto}
+
+\textbf{Generación y representación de ejemplos:}\\
+
+En primer lugar, se decidió implementar las clases y métodos que fueran necesarios para la generación de ejemplos y representación gráfica de estos mismos. El objetivo era poder comprobar, durante el desarrollo de las distintas partes del algoritmo, la eficacia de lo implementado para una buena variedad de casos de prueba y así ver los fallos que podrían haberse cometido y subsanarlos lo antes posible. \\
+De este modo, se implementaron las clases Point y Circunference, que representan los puntos y circunferencias del problema; y las clases DataSet y Canvas, que nos permiten, respectivamente, realizar la carga de datos de un ejemplo a partir de un archivo y elaborar estos de forma aleatoria añadiendo ruido o eliminando puntos.\\
+
+A continuación, se realizó la implementación de los objetivos específicos relativos al código siguiendo el orden en el que aparecían en el documento; ya que iban de menos a más en la elaboración del algoritmo final.\\ 
+
+De esta manera, se creó una estructura de datos formada por dos arrays: 
+\begin{itemize}
+	\item Threshold: que almacena arrays con los grados de pertenencia de cada punto a cada cluster. El cual se recalcula al inicio de cada iteración.
+	\item Clusters: que almacena objetos de la clase Circle, los cuales representan los clusters. Este se recalcula después que el anterior ya que utiliza esos datos para saber que puntos usar para recalcular cada uno.\\
+\end{itemize}
+
+\textbf{Cálculo de circunferencias:}\\
+
+Tras esto, se elaboró un método para calcular centro y radio de una circunferencia a partir de un listado de puntos.\\ 
+La primera versión de este método calculaba el centro como el baricentro del conjunto de puntos y el radio como la distancia media de este a todos los puntos del conjunto. Este método, aunque muy eficiente incluso con ruido, fallaba cuando se le proporcionaba un arco en lugar de una circunferencia; ya que como el baricentro se sitúa en función de la densidad, el centro queda muy cerca del arco resultando en un radio menor al debido, y quedando los puntos de los extremos muy alejados de la circunferencia.\\
+Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto, usando para ello tres puntos de este. La selección de estos tres puntos inicialmente consistía en tomar un punto aleatorio, buscar el más lejano a este y por úlitmo buscar uno a una distancia intermedia de ambos. Esta forma requería cierto coste computacional adicional ya que había que recorrer el listado de puntos más de una vez, pero reaccionaba bien incluso con arcos. Sin embargo, en situaciones con mucho ruido el resultado se desviaba. \\
+Finalmente, se dejaron ambos métodos para poder comprobar con el algoritmo final, como reaccionaba cada uno y cual era más eficiente.\\
+
+\textbf{Cálculo de grados de pertenencia:}\\
+
+Después, se implementó el método correspondiente al cálculo de los grados de pertenencia.\\
+Como primer paso se calculan todas las distancias del punto a los clusters, tras lo cual se realiza un sumatorio de todas ellas. A este se le restan las distancias por separado, para que los grados de pertenencia sean inversamente proporcionales a la distancia. Y para que dichos valores esten normalizados, se dividen los valores de la operación anterior entre el sumatorio.\\
+Cabe destacar que durante la experimentación con el algoritmo final, en ocasiones al intentar normalizar se producían divisiones por cero; lo cual fue solventado instanciando el sumatorio de los puntos con una cantidad despreciable.\\
+Posteriormente, se diseñó una modificación de este método que calcula los grados de pertenencia para todos los puntos de un problema, devolviendo el array correspondiente a ThresholdValues, ya mencionado antes. Además de esta información, este método devuelve otro array formado por tuplas compuestas por un punto y un índice que corresponde al cluster con el que el punto tiene un mayor grado de pertenencia.\\
+
+\textbf{Implementación del esquema general:}\\
+
+Finalmente, se implementó la clase ClusteringSolver en la cual encontramos el método learn, el cual sigue el esquema general planteado.\\
+Para la inicialización, desde un inicio se decidió instanciar las circunferencias de forma aleatoria, concretamente, se toma como centro un punto aleatorio del listado y se le proporciona un radio también aleatorio.\\
+En cuanto al criterio de parada, primero se implementó con un número fijo de iteraciones ya que era más sencillo y permitía comprobar el comportamiento del algoritmo con facilidad; aunque finalmente se acabó implementando un criterio de parada basado en que los centros y radios de los clusters no variaran en una cantidad determinada por el usuario. Sin embargo, es necesario aportar un número máximo de iteraciones pues pueden producirse casos en los que en la búsqueda por alcanzar la precisión deseada genere que el centro alterne entre dos puntos de forma indefinida.\\
+Se decidió permitir al usuario elegir si utilizar baricentro o circuncentro para recalcular las circunferencias. Aunque es cierto, que si el conjunto de puntos suministrado para un cluster es menor de tres, se utiliza el baricentro ya que el circuncentro necesita como minimo esa cantidad.\\
+Por último, para la presentación final de los datos, se creó la clase Solution; la cual utiliza la información contenida en un objeto ClusteringSolver que ya ha realizado el método learn. Nos permite eliminar puntos cuyo grado de pertenencia final sea menor al elegido por el usuario, además de representar los datos de forma gráfica mostrando las circunferencias junto con los puntos coloreados en función del cluster al que pertenecen. Actualmente, esta representación tiene como límite siete clusters, ya que a partir de octavo los colores se repetirán y no se podrá saber con certeza si la asignación es correcta. Aún así, es facilmente escacalable.\\
+Una vez implementado todo, realizando la experimentación, se observó que la inicialización de los clusters al ser aleatoria condicionaba mucho el resultado final del algoritmo. De modo, que se decidió investigar sobre ello y se encontró que una técnica bastante utilizada era el lanzamiento del algoritmo con múltiples instancias  haciendo uso de una heurística para obtener el mejor resultado de todas ellas. En nuestro caso, la heurística es que se considera un mejor resultado aquel en el que el sumatorio de las distancias de los puntos a los clusters es menor.\\
+
+\textbf{Mejoras:}\\
+
+Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, que nos permite crear ejemplos aleatorios, eliminar de estos puntos, insertar ruido y guardarlo como fichero Excel en la ruta deseada; así como la resolución de estos indicando el número de instancias, clusters, precisión y máximo de iteraciones.\\
+Además, se aporta otra interfaz gráfica en la que se carga un archivo Excel, se muestra y se resuelve con los parámetros antes mencionados.\\
+Los archivos Excel mencionados están formados por una primera fila con las cabeceras "Coord X, Coord Y, Circulo", en la que "Circulo" es opcional; y por cada punto del ejemplo una nueva fila con las coordenadas x e y del punto así como el círculo al que pertenece separado por comas.
+
 % Glosario
 %clustering
 %clúster, clústeres 
