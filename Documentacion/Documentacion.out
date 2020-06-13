@@ -1,3 +1,12 @@
-\BOOKMARK [1][-]{section.1}{Investigaci\363n Kike}{}% 1
-\BOOKMARK [1][-]{section.2}{Estructura del proyecto}{}% 2
-\BOOKMARK [1][-]{section*.1}{Referencias}{}% 3
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Investigaci\363n}{}% 2
+\BOOKMARK [1][-]{section.3}{Estructura del proyecto}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Dominio del problema y generaci\363n de ejemplos}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Estructura de datos}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{C\341lculo de circunferencias}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{C\341lculo de grados de pertenencia}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Implementaci\363n del esquema general}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Mejoras}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.7}{Elementos descartados}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.8}{Metodolog\355a Implementada}{section.3}% 11
+\BOOKMARK [1][-]{section*.1}{Referencias}{}% 12
