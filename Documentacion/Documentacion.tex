@@ -4,8 +4,11 @@
 \usepackage{amsmath}
 % Inserción de gráficos
 \usepackage{graphicx}
+\graphicspath{ {images/} }
 % Escritura de pseudocódigo
 \usepackage[kw]{pseudo}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
 % Escritura mejorada de tablas
 \usepackage{booktabs}
 % Escritura mejorada de citas bibliográficas
@@ -117,47 +120,87 @@ Creemos que K-Means es la segunda mejor opción ya que el algoritmo como su nomb
 
 \section{Estructura del proyecto}
 
-\textbf{Generación y representación de ejemplos:}\\
+\textbf{\\Dominio del problema y generación de ejemplos}\\
 
-En primer lugar, se decidió implementar las clases y métodos que fueran necesarios para la generación de ejemplos y representación gráfica de estos mismos. El objetivo era poder comprobar, durante el desarrollo de las distintas partes del algoritmo, la eficacia de lo implementado para una buena variedad de casos de prueba y así ver los fallos que podrían haberse cometido y subsanarlos lo antes posible. \\
-De este modo, se implementaron las clases Point y Circunference, que representan los puntos y circunferencias del problema; y las clases DataSet y Canvas, que nos permiten, respectivamente, realizar la carga de datos de un ejemplo a partir de un archivo y elaborar estos de forma aleatoria añadiendo ruido o eliminando puntos.\\
+En primer lugar, se implementaron aquellas clases relativas a los elementos del dominio del problema, \textit{Point} y \textit{Circunference}, que sirven para representar el conjunto de puntos de entrada y las resultantes circunferencias que agrupan a estos.
+La primera solo almacena las coordenadas x e y de un punto, mientras que la segunda almacena el centro y radio de una circunferencia; además del conjunto de puntos usados para su representación gráfica. Ambas clases, durante el desarrollo del proyecto, fueron aumentando en tamaño al incluirse en ellas métodos necesarios para la implementación del algoritmo.\\
 
-A continuación, se realizó la implementación de los objetivos específicos relativos al código siguiendo el orden en el que aparecían en el documento; ya que iban de menos a más en la elaboración del algoritmo final.\\ 
+Tras la elaboración de estas clases, se decidió diseñar las necesarias para la generación de ejemplos y representación gráfica de estos mismos. El objetivo era poder comprobar la eficacia de las distintas partes del algoritmo a medida que se desarrollaba con una buena variedad de casos de prueba; pudiéndose encontrar los fallos que podrían haberse cometido y subsanarlos lo antes posible.\\
 
-De esta manera, se creó una estructura de datos formada por dos arrays: 
+Estas clases son \textit{DataSet} y  \textit{Canvas}, que nos permiten, respectivamente, realizar la carga de datos de un ejemplo a partir de un archivo .csv y elaborar y representar estos. En cuanto al formato de los archivos .csv, este viene detallado en el archivo README.txt adjunto al código. En cuanto a la generación de ejemplos, se crearon métodos aleatorios para la creación de distribuciones de circunferencias, la eliminación de un porcentaje de puntos y la inserción de ruido desviando estos. Este desvío se hace adaptando el método \textit{numpy.random.normal} el cual proporciona valores aleatorios dentro de una distribución. Para la adaptación solo es necesario aportar la desviación que queremos en dicha distribución.\\
+La generación de un nuevo ejemplo consiste en crear una distribución aleatoria, eliminar algunos puntos de ella y desviar los restantes para tener algo de ruido. El único problema de esta forma de actuar, es que si se queremos un ejemplo muy concreto, es necesario crearlo a mano o bien ejecutar el método hasta tener un caso similar al buscado. Como ya se ha mencionado, \textit{Canvas} nos permite también representar dichos ejemplos mostrándonos de forma conjunta los puntos y circunferencias del problema.\\
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.8]{EjemploGenerado}
+\caption{Ejemplo generado de forma aleatoria, porcentaje de eliminación=30\%, escala del desvío=0.5}
+\end{figure}
+
+
+A continuación, se realizó la implementación de los objetivos específicos relativos al código siguiendo el orden en el que aparecían en el documento; ya que iban de menos a más en la elaboración del algoritmo final.\\
+
+\textbf{Estructura de datos}\\
+
+De esta manera, se diseñó para almacenar la información de cada iteración del algoritmo una estructura de datos basada en dos arrays: 
 \begin{itemize}
-	\item Threshold: que almacena arrays con los grados de pertenencia de cada punto a cada cluster. El cual se recalcula al inicio de cada iteración.
-	\item Clusters: que almacena objetos de la clase Circle, los cuales representan los clusters. Este se recalcula después que el anterior ya que utiliza esos datos para saber que puntos usar para recalcular cada uno.\\
+	\item Clusters: Almacena objetos de la clase \textit{Circunference}, los cuales representan. El orden de estos en el array viene definido por como se inicializaron.
+	\item Threshold: Almacena arrays con los grados de pertenencia de cada punto a cada cluster. El orden de estos viene definido por como estuvieran los puntos ordenados en el archivo .csv.\\
 \end{itemize}
 
-\textbf{Cálculo de circunferencias:}\\
+\textbf{Cálculo de circunferencias}\\
 
 Tras esto, se elaboró un método para calcular centro y radio de una circunferencia a partir de un listado de puntos.\\ 
-La primera versión de este método calculaba el centro como el baricentro del conjunto de puntos y el radio como la distancia media de este a todos los puntos del conjunto. Este método, aunque muy eficiente incluso con ruido, fallaba cuando se le proporcionaba un arco en lugar de una circunferencia; ya que como el baricentro se sitúa en función de la densidad, el centro queda muy cerca del arco resultando en un radio menor al debido, y quedando los puntos de los extremos muy alejados de la circunferencia.\\
-Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto, usando para ello tres puntos de este. La selección de estos tres puntos inicialmente consistía en tomar un punto aleatorio, buscar el más lejano a este y por úlitmo buscar uno a una distancia intermedia de ambos. Esta forma requería cierto coste computacional adicional ya que había que recorrer el listado de puntos más de una vez, pero reaccionaba bien incluso con arcos. Sin embargo, en situaciones con mucho ruido el resultado se desviaba. \\
-Finalmente, se dejaron ambos métodos para poder comprobar con el algoritmo final, como reaccionaba cada uno y cual era más eficiente.\\
+La primera versión de este método calculaba el centro como el baricentro del conjunto y el radio como la distancia media de este a todos los puntos. Este método, aunque muy eficiente incluso con ruido, fallaba cuando se le proporcionaba un arco en lugar de una circunferencia; ya que como el baricentro se sitúa en función de la densidad, el centro queda muy cerca del arco resultando en un radio menor al debido, y quedando los puntos de los extremos muy alejados de la circunferencia.\\
 
-\textbf{Cálculo de grados de pertenencia:}\\
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.9]{ArcoBaricentro}
+\caption{Ejemplo con los puntos en forma de arco}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.8]{ArcoBaricentroResultado}
+\caption{Circunferencia calculada usando el baricentro}
+\end{figure}
+
+Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, \hyperref[bib:georgeSeif]{Cálculo del circuncentro}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.\\
+
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.8]{ArcoCircuncentroResultado}
+\caption{Circunferencia calculada usando el circuncentro}
+\end{figure}
+
+Como vemos, la selección de los puntos es muy importante y ha sido un elemento que se ha tratado de múltiples formas. El planteamiento inicial  consistía en tomar un punto aleatorio, buscar el más lejano a este y por último buscar uno a una distancia intermedia de ambos. Esta forma requería cierto coste computacional adiciona con respecto al baricentro;l ya que había que recorrer el listado de puntos más de una vez, pero reaccionaba bien incluso con arcos. Sin embargo, en situaciones con mucho ruido el resultado se desviaba. Se intentaron otras formas de seleccionar estos puntos, por ejemplo, siguiendo la estructura anterior pero siendo el último punto uno aleatorio también. Sin embargo, ninguna terminaba de funcionar; así que finalmente se optó porque todos fueran aleatorios ya que el resultado era muy similar y requería un coste computacional mucho menor.\\
+
+Finalmente, se dejaron tanto el método que utiliza el baricentro como el que utiliza el circuncentro para poder comprobar con el algoritmo final como reaccionaba cada uno y cual era más eficiente.\\
+
+\textbf{Cálculo de grados de pertenencia}\\
 
 Después, se implementó el método correspondiente al cálculo de los grados de pertenencia.\\
-Como primer paso se calculan todas las distancias del punto a los clusters, tras lo cual se realiza un sumatorio de todas ellas. A este se le restan las distancias por separado, para que los grados de pertenencia sean inversamente proporcionales a la distancia. Y para que dichos valores esten normalizados, se dividen los valores de la operación anterior entre el sumatorio.\\
+Como primer paso se calculan todas las distancias del punto a los clusters, tras lo cual se realiza un sumatorio de todas ellas. A este se le restan las distancias por separado, para que los grados de pertenencia sean inversamente proporcionales a la distancia. Y para que dichos valores esten normalizados, se dividen los resultados de la operación anterior entre el sumatorio.\\
 Cabe destacar que durante la experimentación con el algoritmo final, en ocasiones al intentar normalizar se producían divisiones por cero; lo cual fue solventado instanciando el sumatorio de los puntos con una cantidad despreciable.\\
-Posteriormente, se diseñó una modificación de este método que calcula los grados de pertenencia para todos los puntos de un problema, devolviendo el array correspondiente a ThresholdValues, ya mencionado antes. Además de esta información, este método devuelve otro array formado por tuplas compuestas por un punto y un índice que corresponde al cluster con el que el punto tiene un mayor grado de pertenencia.\\
+Posteriormente, se diseñó una modificación de este método que calcula los grados de pertenencia para todos los puntos de un problema, devolviendo el array correspondiente a Threshold, ya mencionado antes. Para esto se llama al método anterior por cada uno de los puntos del problema.\\
 
-\textbf{Implementación del esquema general:}\\
+\textbf{Implementación del esquema general}\\
 
-Finalmente, se implementó la clase ClusteringSolver en la cual encontramos el método learn, el cual sigue el esquema general planteado.\\
-Para la inicialización, desde un inicio se decidió instanciar las circunferencias de forma aleatoria, concretamente, se toma como centro un punto aleatorio del listado y se le proporciona un radio también aleatorio.\\
-En cuanto al criterio de parada, primero se implementó con un número fijo de iteraciones ya que era más sencillo y permitía comprobar el comportamiento del algoritmo con facilidad; aunque finalmente se acabó implementando un criterio de parada basado en que los centros y radios de los clusters no variaran en una cantidad determinada por el usuario. Sin embargo, es necesario aportar un número máximo de iteraciones pues pueden producirse casos en los que en la búsqueda por alcanzar la precisión deseada genere que el centro alterne entre dos puntos de forma indefinida.\\
-Se decidió permitir al usuario elegir si utilizar baricentro o circuncentro para recalcular las circunferencias. Aunque es cierto, que si el conjunto de puntos suministrado para un cluster es menor de tres, se utiliza el baricentro ya que el circuncentro necesita como minimo esa cantidad.\\
-Por último, para la presentación final de los datos, se creó la clase Solution; la cual utiliza la información contenida en un objeto ClusteringSolver que ya ha realizado el método learn. Nos permite eliminar puntos cuyo grado de pertenencia final sea menor al elegido por el usuario, además de representar los datos de forma gráfica mostrando las circunferencias junto con los puntos coloreados en función del cluster al que pertenecen. Actualmente, esta representación tiene como límite siete clusters, ya que a partir de octavo los colores se repetirán y no se podrá saber con certeza si la asignación es correcta. Aún así, es facilmente escacalable.\\
-Una vez implementado todo, realizando la experimentación, se observó que la inicialización de los clusters al ser aleatoria condicionaba mucho el resultado final del algoritmo. De modo, que se decidió investigar sobre ello y se encontró que una técnica bastante utilizada era el lanzamiento del algoritmo con múltiples instancias  haciendo uso de una heurística para obtener el mejor resultado de todas ellas. En nuestro caso, la heurística es que se considera un mejor resultado aquel en el que el sumatorio de las distancias de los puntos a los clusters es menor.\\
+Finalmente, se implementó la clase \textit{ClusteringSolver} en la cual encontramos el método \textit{learn}, el cual sigue el esquema general planteado con pequeñas modificaciones que comentaremos más adelante; pero primero vamos a centrarnos en lo que tienen en común ambas.\\
 
-\textbf{Mejoras:}\\
+Para la inicialización, desde un inicio se decidió instanciar las circunferencias de forma aleatoria, concretamente, se toma como centro un punto aleatorio del listado y se le proporciona un radio también aleatorio. Además, se decidió permitir al usuario elegir si utilizar baricentro o circuncentro para recalcular las circunferencias. Aunque es cierto, que si el conjunto de puntos suministrado para un cluster es menor de tres, se utiliza el baricentro ya que el circuncentro necesita como minimo esa cantidad.\\
 
-Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, que nos permite crear ejemplos aleatorios, eliminar de estos puntos, insertar ruido y guardarlo como fichero Excel en la ruta deseada; así como la resolución de estos indicando el número de instancias, clusters, precisión y máximo de iteraciones.\\
-Además, se aporta otra interfaz gráfica en la que se carga un archivo Excel, se muestra y se resuelve con los parámetros antes mencionados.\\
-Los archivos Excel mencionados están formados por una primera fila con las cabeceras "Coord X, Coord Y, Circulo", en la que "Circulo" es opcional; y por cada punto del ejemplo una nueva fila con las coordenadas x e y del punto así como el círculo al que pertenece separado por comas.
+En cuanto al criterio de parada, primero se implementó con un número fijo de iteraciones ya que era más sencillo y permitía comprobar el comportamiento del algoritmo con facilidad; aunque finalmente se acabó implementando un criterio de parada basado en que los centros y radios de los clusters no variaran en una cantidad determinada por el usuario, correspondiente al parámetro \textit{precision}. Sin embargo, es necesario aportar un número máximo de iteraciones pues en el caso de utilizar el circuncentro para recalcular los clusters, al tomarse puntos aleatorios, los centros y radios pueden aumentar sustancialmente. Este problema no se produce al utilizar el baricentro.\\
+
+Por último, para la presentación final de los datos, se creó la clase  \textit{Solution}; la cual utiliza la información contenida en un objeto \textit{ClusteringSolver} que ya ha realizado el método  \textit{learn}, es decir, ya ha obtenido el resultado del algoritmo. Esta clase nos permite eliminar puntos cuyo grado de pertenencia final sea menor al elegido por el usuario, además de representar los datos de forma gráfica mostrando las circunferencias junto con los puntos coloreados en función del cluster al que pertenecen. Actualmente, esta representación tiene como límite siete clusters, ya que a partir del octavo los colores se repetirán y no se podrá saber con certeza si la asignación es correcta. Aún así, es facilmente escalable.\\
+
+Las modificaciones se realizaron una vez implementado todo. Realizando la experimentación se observó que la inicialización de los clusters al ser aleatoria condicionaba mucho el resultado final del algoritmo. De modo, que se decidió investigar sobre ello y se encontró que una técnica bastante utilizada era el lanzamiento del algoritmo con múltiples instancias haciendo uso de una heurística para obtener el mejor resultado de todas ellas. En nuestro caso, la heurística  considera un mejor resultado aquel en el que el sumatorio de las distancias de los puntos a los clusters es menor.\\
+
+\textbf{Mejoras}\\
+
+Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, que nos permite crear ejemplos aleatorios, eliminar de estos puntos, insertar ruido y guardarlo como fichero .csv en la ruta deseada; así como la resolución de estos indicando el número de instancias, clusters, precisión y máximo de iteraciones. Además, se aporta otra interfaz gráfica en la que se carga un archivo .csv, se muestra y se resuelve con los parámetros antes mencionados. Estos archivos siguen el formato indicado en el fichero README.txt.\\
+Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} y con los métodos \textit{createAndSolve} and \textit{loadAndSolve} que facilitan las funcionalidades anteriores. Esta interfaz deja al usuario de elegir los valores descritos anteriormente a través de sliders; así como insertarlos a mano.\\
 
 % Glosario
 %clustering
@@ -174,6 +217,12 @@ Los archivos Excel mencionados están formados por una primera fila con las cabe
 	Seif, G., 2020. The 5 Clustering Algorithms Data Scientists Need To Know. [online] Medium. 
 	Available at: \href{https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68}{https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68}
 	[Accessed 18 April 2020].
+
+	\bibitem{georgeSeif}
+	\label{bib:georgeSeif}
+	Seif, G., 2020. SuperProf Material Didáctico - Circuncentro. [online] Medium. 
+	Available at: \href{https://www.superprof.es/apuntes/escolar/matematicas/analitica/recta/circuncentro.html}{https://www.superprof.es/apuntes/escolar/matematicas/analitica/recta/circuncentro.html}
+	[Accessed 22 April 2020].
 
 \end{thebibliography}
 
