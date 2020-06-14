@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.6.11)  14 JUN 2020 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.26)  14 JUN 2020 16:28
 entering extended mode
 **./Documentacion.tex
 (Documentacion.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
+L3 programming layer <2020-04-06>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ieeetran\IEEEtran.cls"
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -195,7 +195,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/pseudo\pseudo.sty"
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-03-06 L3 programming layer (loader) 
+Package: expl3 2020-04-06 L3 programming layer (loader) 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
@@ -505,12 +505,7 @@ LaTeX Info: Redefining \nameref on input line 66.
 \openout3 = `Documentacion.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
@@ -520,23 +515,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 79--80
-\OT1/ptm/m/n/10 su-per-visado, donde aparece la t[]ecnica cono-cida como
- []
-
-
-Underfull \hbox (badness 3668) in paragraph at lines 79--80
-\OT1/ptm/m/n/10 no \eti-que-ta-dos" en sub-con-jun-tos de ob-je-tos lla-ma-dos
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
- []
-
-
-Underfull \hbox (badness 1803) in paragraph at lines 81--82
-\OT1/ptm/m/n/10 cat[]alogo que op-ciones nos in-tere-san m[]as da-dos cier-tos
  []
 
 
@@ -545,8 +525,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
  []
 
 
+Underfull \hbox (badness 4441) in paragraph at lines 83--84
+\OT1/ptm/m/n/10 su-per-visado, donde aparece la t[]ecnica cono-cida como
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 83--84
+\OT1/ptm/m/n/10 no \eti-que-ta-dos" en sub-con-jun-tos de ob-je-tos lla-ma-dos
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 85--86
+\OT1/ptm/m/n/10 cat[]alogo que op-ciones nos in-tere-san m[]as da-dos cier-tos
  []
 
 
@@ -555,193 +550,203 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 105--106
 []\OT1/ptm/m/n/10 Este al-go-ritmo con-siste, en como ya se men-cion[]o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-[1{C:/Users/ENRIQUE/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
-
- []
+[1{C:/Users/enri8/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 132--133
 []\OT1/ptm/m/n/10 Este al-go-ritmo pre-senta ven-ta-jas re-specto a K-Means
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 5924) in paragraph at lines 139--140
+Underfull \hbox (badness 5924) in paragraph at lines 142--143
 []\OT1/ptm/m/n/10 En primer lu-gar, se im-ple-men-taron aque-l-las clases
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-<images/EjemploGenerado.png, id=68, 282.30469pt x 190.46156pt>
+<images/EjemploGenerado.png, id=69, 282.30469pt x 190.46156pt>
 File: images/EjemploGenerado.png Graphic file (type png)
 <use images/EjemploGenerado.png>
-Package pdftex.def Info: images/EjemploGenerado.png  used on input line 151.
+Package pdftex.def Info: images/EjemploGenerado.png  used on input line 154.
 (pdftex.def)             Requested size: 225.84404pt x 152.36943pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 155--156
+Underfull \hbox (badness 1852) in paragraph at lines 158--159
 []\OT1/ptm/m/n/10 A con-tin-uaci[]on, se re-aliz[]o la im-ple-mentaci[]on de lo
 s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 []\OT1/ptm/m/n/10 Threshold: Al-ma-cena ar-rays con los gra-dos de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
-<images/ArcoBaricentro.png, id=70, 173.14688pt x 173.14688pt>
+<images/ArcoBaricentro.png, id=71, 173.14688pt x 173.14688pt>
 File: images/ArcoBaricentro.png Graphic file (type png)
 <use images/ArcoBaricentro.png>
-Package pdftex.def Info: images/ArcoBaricentro.png  used on input line 173.
+Package pdftex.def Info: images/ArcoBaricentro.png  used on input line 176.
 (pdftex.def)             Requested size: 155.83075pt x 155.83075pt.
 
 Underfull \vbox (badness 4279) has occurred while \output is active []
@@ -749,142 +754,143 @@ Underfull \vbox (badness 4279) has occurred while \output is active []
  [3
 
  <./images/EjemploGenerado.png>]
-<images/ArcoBaricentroResultado.png, id=78, 203.25937pt x 189.70876pt>
+<images/ArcoBaricentroResultado.png, id=79, 203.25937pt x 189.70876pt>
 File: images/ArcoBaricentroResultado.png Graphic file (type png)
 <use images/ArcoBaricentroResultado.png>
 Package pdftex.def Info: images/ArcoBaricentroResultado.png  used on input line
- 179.
+ 182.
 (pdftex.def)             Requested size: 162.60771pt x 151.7672pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-<images/ArcoCircuncentroResultado.png, id=80, 195.73125pt x 188.95593pt>
+<images/ArcoCircuncentroResultado.png, id=81, 195.73125pt x 188.95593pt>
 File: images/ArcoCircuncentroResultado.png Graphic file (type png)
 <use images/ArcoCircuncentroResultado.png>
 Package pdftex.def Info: images/ArcoCircuncentroResultado.png  used on input li
-ne 187.
+ne 190.
 (pdftex.def)             Requested size: 156.58519pt x 151.16493pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 201--202
+Underfull \hbox (badness 2469) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 al-go-ritmo fi-nal, en oca-siones al in-ten-tar nor-malizar se
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 201--202
+Underfull \hbox (badness 3240) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 pro-duc[]an di-vi-siones por cero; lo cual fue sol-ven-tado
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 [4 <./images/ArcoBaricentro.png> <./images/ArcoBaricentroResultado.png> <./imag
 es/ArcoCircuncentroResultado.png>]
-Underfull \hbox (badness 4108) in paragraph at lines 207--208
+Underfull \hbox (badness 4108) in paragraph at lines 210--211
 []\OT1/ptm/m/n/10 Finalmente, se im-ple-ment[]o la clase \OT1/ptm/m/it/10 Clus-
 ter-ing-Solver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 211--212
+Underfull \hbox (badness 2197) in paragraph at lines 214--215
 \OT1/ptm/m/n/10 pueden au-men-tar sus-tan-cial-mente. Este prob-lema no se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 215--216
+Underfull \hbox (badness 1668) in paragraph at lines 218--219
 \OT1/ptm/m/n/10 todo. Re-al-izando la ex-per-i-mentaci[]on se ob-serv[]o que la
 
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 215--216
+Underfull \hbox (badness 1590) in paragraph at lines 218--219
 \OT1/ptm/m/n/10 bas-tante uti-lizada era el lan-za-miento del al-go-ritmo con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 221--222
-[]\OT1/ptm/m/n/10 Todo esto se pro-por-ciona al usuario a trav[]es de la
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+[]\OT1/ptm/b/n/10 calculateDistanceToCluster[]noAbs(c)\OT1/ptm/m/n/10 : recibe 
+como
  []
 
 
@@ -893,52 +899,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
-[5]
+
+Underfull \hbox (badness 1648) in paragraph at lines 235--236
+[]\OT1/ptm/b/n/10 calculateDistanceToPoint(p)\OT1/ptm/m/n/10 : recibe como par[
+]ametro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 236--237
+[]\OT1/ptm/b/n/10 equals(p)\OT1/ptm/m/n/10 : recibe como par[]ametro un punto y
+ se
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 242--243
-[]\OT1/ptm/m/n/10 Este cam-bio se re-al-iza sim-ple-mente in-tro-duciendo la
+Underfull \hbox (badness 4072) in paragraph at lines 243--244
+[]\OT1/ptm/m/n/10 Esta clase como su nom-bre in-dica, rep-re-senta una
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
-[]\OT1/ptm/m/n/10 En nue-stro caso, de-bido al prob-lema ex-pli-cado
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 2401) in paragraph at lines 249--250
+\OT1/ptm/m/n/10 rep-re-sentaci[]on de la cir-cun-fer-en-cia acorde con los
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 250--251
+[]\OT1/ptm/b/n/10 update(centre, ra-dius)\OT1/ptm/m/n/10 : Recibe como par[]ame
+tro un
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 251--252
+[]\OT1/ptm/b/n/10 draw()\OT1/ptm/m/n/10 : Coge los val-ores cal-cu-la-dos en el
+ m[]etodo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
@@ -948,55 +993,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--253
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+[]\OT1/ptm/b/n/10 calculateWithCircumcenter(points)\OT1/ptm/m/n/10 : Recibe com
+o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
-[]\OT1/ptm/b/n/10 calculateDistanceToCluster[]noAbs(c)\OT1/ptm/m/n/10 : recibe 
-como
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+[]\OT1/ptm/b/n/10 calculateWithBarycentre(list[]points)\OT1/ptm/m/n/10 : Recibe
+ como
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
+[6
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-
- []
-
-
-Underfull \hbox (badness 1648) in paragraph at lines 261--262
-[]\OT1/ptm/b/n/10 calculateDistanceToPoint(p)\OT1/ptm/m/n/10 : recibe como par[
-]ametro
- []
-
-
+]
 Underfull \hbox (badness 10000) in paragraph at lines 261--262
-
- []
-
-
-Underfull \hbox (badness 2790) in paragraph at lines 262--263
-[]\OT1/ptm/b/n/10 equals(p)\OT1/ptm/m/n/10 : recibe como par[]ametro un punto y
- se
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
@@ -1006,13 +1032,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--264
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
- []
-
-
-Underfull \hbox (badness 4072) in paragraph at lines 269--270
-[]\OT1/ptm/m/n/10 Esta clase como su nom-bre in-dica, rep-re-senta una
  []
 
 
@@ -1021,24 +1042,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--270
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+[]\OT1/ptm/b/n/10 getClusterAssignment(threshold)\OT1/ptm/m/n/10 : Recibe como
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 275--276
-\OT1/ptm/m/n/10 rep-re-sentaci[]on de la cir-cun-fer-en-cia acorde con los
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+[]\OT1/ptm/b/n/10 groupPointsByCluster(cluserAssignment)\OT1/ptm/m/n/10 : Recib
+e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 276--277
-[]\OT1/ptm/b/n/10 update(centre, ra-dius)\OT1/ptm/m/n/10 : Recibe como par[]ame
-tro un
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 274--275
+\OT1/ptm/m/n/10 pre-cisi[]on que in-dica la m[]nima variaci[]on de una
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 274--275
+\OT1/ptm/m/n/10 m[]aximas en el caso de que se en-cuen-tre en un
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 274--275
+\OT1/ptm/m/n/10 bu-cle y el modo que al igual que en el m[]etodo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
  []
 
 
@@ -1047,50 +1098,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 277--278
-[]\OT1/ptm/b/n/10 draw()\OT1/ptm/m/n/10 : Coge los val-ores cal-cu-la-dos en el
- m[]etodo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-[]\OT1/ptm/b/n/10 calculateWithCircumcenter(points)\OT1/ptm/m/n/10 : Recibe com
-o
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
-[]\OT1/ptm/b/n/10 calculateWithBarycentre(list[]points)\OT1/ptm/m/n/10 : Recibe
- como
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
@@ -1100,38 +1118,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--290
  []
 
 
+Underfull \hbox (badness 2042) in paragraph at lines 291--292
+\OT1/ptm/m/n/10 el m[]nimo grado de perte-nen-cia ya que se llama
+ []
+
+
+Underfull \hbox (badness 6063) in paragraph at lines 291--292
+\OT1/ptm/m/n/10 al m[]etodo aux-il-iar eraseNoise(minThreshold). Tras
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 297--298
-[]\OT1/ptm/b/n/10 getClusterAssignment(threshold)\OT1/ptm/m/n/10 : Recibe como
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
-[]\OT1/ptm/b/n/10 groupPointsByCluster(cluserAssignment)\OT1/ptm/m/n/10 : Recib
-e
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
@@ -1141,107 +1143,114 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
  []
 
 
-Underfull \hbox (badness 3168) in paragraph at lines 300--301
-\OT1/ptm/m/n/10 pre-cisi[]on que in-dica la m[]nima variaci[]on de una
- []
-
-
-Underfull \hbox (badness 2469) in paragraph at lines 300--301
-\OT1/ptm/m/n/10 m[]aximas en el caso de que se en-cuen-tre en un
- []
-
-
-Underfull \hbox (badness 1584) in paragraph at lines 300--301
-\OT1/ptm/m/n/10 bu-cle y el modo que al igual que en el m[]etodo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
-
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 317--318
-\OT1/ptm/m/n/10 el m[]nimo grado de perte-nen-cia ya que se llama
- []
-
-
-Underfull \hbox (badness 6063) in paragraph at lines 317--318
-\OT1/ptm/m/n/10 al m[]etodo aux-il-iar eraseNoise(minThreshold). Tras
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 333--336
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 314--315
+[]\OT1/ptm/m/n/10 Este cam-bio se re-al-iza sim-ple-mente in-tro-duciendo la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+[]\OT1/ptm/m/n/10 En nue-stro caso, de-bido al prob-lema ex-pli-cado
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 322--323
+[]\OT1/ptm/m/n/10 Todo esto se pro-por-ciona al usuario a trav[]es de la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 336--339
 \OT1/ptm/m/n/8 5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--336
+Underfull \hbox (badness 10000) in paragraph at lines 336--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+Underfull \hbox (badness 10000) in paragraph at lines 342--345
 []\OT1/ptm/m/n/8 Seif, G., 2020. Su-per-Prof Ma-te-rial Did[]actico
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+Underfull \hbox (badness 10000) in paragraph at lines 342--345
 \OT1/ptm/m/n/8 - Cir-cun-cen-tro. [on-line] Medium. Avail-able at:
  []
 
 
-Overfull \hbox (42.42009pt too wide) in paragraph at lines 339--342
+Overfull \hbox (42.42009pt too wide) in paragraph at lines 342--345
 [][]\OT1/ptm/m/n/8 https://www.superprof.es/apuntes/escolar/matematicas/analiti
 ca/recta/circuncentro.html[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+Underfull \hbox (badness 10000) in paragraph at lines 342--345
 
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 345--348
+Underfull \hbox (badness 3229) in paragraph at lines 348--351
 \OT1/ptm/m/n/8 Need To Know. [on-line] Medium. Avail-able at: [][]http://www.re
 al-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--348
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
 \OT1/ptm/m/n/8 statistics.com/multivariate-statistics/cluster-analysis/initiali
 zing-clusters-
  []
@@ -1257,25 +1266,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-[8
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+[9
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
  (Documentacion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
 Package rerunfilecheck Info: File `Documentacion.out' has not changed.
-(rerunfilecheck)             Checksum: DDD604BA9FC590A37E3EF721948B61F2;824.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+(rerunfilecheck)             Checksum: C7B4FE11F3C95F80D94C2E9C53660943;823.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
  ) 
 Here is how much of TeX's memory you used:
- 8698 strings out of 480934
- 140778 string characters out of 2909676
- 421696 words of memory out of 3000000
- 24397 multiletter control sequences out of 15000+200000
- 561063 words of font info for 73 fonts, out of 3000000 for 9000
+ 8700 strings out of 480930
+ 140947 string characters out of 2909547
+ 421601 words of memory out of 3000000
+ 24400 multiletter control sequences out of 15000+200000
+ 562159 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,8n,43p,916b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -1283,11 +1296,12 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Documentacion.pdf (8 pages, 157849 bytes).
+b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Documentacion.pdf (9 pages, 167676 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

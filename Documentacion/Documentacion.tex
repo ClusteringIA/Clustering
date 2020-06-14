@@ -68,6 +68,10 @@
 
 %Investigación Kike
 
+\textbf{\textit{Resumen} -- El objetivo principal del trabajo es tratar de dar un catálogo de las posibles configuraciones con el objetivo de resolver diferentes escenarios de clustering}\\
+
+\textbf{\textit{Palabras claves} --}
+
 \section{Introducción}
 
 En la gran mayoría de ámbitos, siempre hemos encontrado de forma muy útil la clasificación de datos con varios objetivos en mente como puede ser visualizar estos y ver que características comparten entre si.\\
@@ -84,7 +88,6 @@ Esto resultará en la realización del código propuesto para resolver el proble
 
 De esta forma, tendremos como conclusión un conjunto de decisiones empíricas para diferentes configuraciones y diferentes escenarios donde podremos ver que nos interesa realizar.\\
 
-\newpage
 \section{Investigación}
 
 Para la realización de nuestro trabajo, investigamos respecto al funcionamiento de los diferentes algoritmos utilizados.\\
@@ -132,7 +135,7 @@ El artículo habla de otros dos algoritmos los cuales no consideramos relevantes
 
 %Estructura del proyecto
 \clearpage
-\section{Estructura del proyecto}
+\section{Metodología}
 
 \subsection{Dominio del problema y generación de ejemplos}
 
@@ -214,36 +217,7 @@ Por último, para la presentación final de los datos, se creó la clase  \texti
 
 Las modificaciones se realizaron una vez implementado todo. Realizando la experimentación se observó que la inicialización de los clusters al ser aleatoria condicionaba mucho el resultado final del algoritmo. De modo, que se decidió investigar sobre ello y se encontró que una técnica bastante utilizada era el lanzamiento del algoritmo con múltiples instancias haciendo uso de una heurística para obtener el mejor resultado de todas ellas. En nuestro caso, la heurística  considera un mejor resultado aquel en el que el sumatorio de las distancias de los puntos a los clusters es menor.\\
 
-\subsection{Mejoras}
-
-Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, que nos permite crear ejemplos aleatorios, eliminar de estos puntos, insertar ruido y guardarlos como fichero .csv en la ruta deseada; así como la resolución de estos indicando el número de instancias, clusters, precisión y máximo de iteraciones. Además, se aporta otra interfaz gráfica en la que se puede cargar un archivo .csv, al cual se le puede eliminar puntos y añadir ruidos, y resolverlo con los parámetros antes mencionados. Estos archivos siguen el formato indicado en el fichero README.txt.\\
-
-Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} y con los métodos \textit{createAndSolve} and \textit{loadAndSolve} que facilitan las funcionalidades anteriores. Esta interfaz deja al usuario de elegir los valores descritos anteriormente a través de sliders; así como insertarlos a mano.\\
-
-\subsection{Elementos descartados}
-
-\textbf{Método para la selección de los tres puntos para realización del circuncentro:} \\
-
-Originalmente habíamos diseñado un método que según cierta heurística era capaz de calcular el circuncentro de 3 puntos dados, sin embargo, siempre nos encontramos con el mismo problema de forma recursiva: no se escogían los puntos de la forma que queríamos.\\
-
-Esto nos empujó a una solución un tanto radical que fue la selección de los puntos de forma aleatoria. Tal como se había planteado el algoritmo, esto no iban a suponer ningún problema ya que introdujimos generaciones, de forma que en alguna de ellas los puntos escogidos serían los ideales y efectivamente funcionaba.
-Sin embargo, esto provocó un problema: Ciclos. Había un determinado momento en el que, por iteración al escogerse los puntos de forma aleatoria, los clusters variaban lo justo y necesario como para no converger.\\
-
-Ante este problema teníamos tres soluciones: implementar un número máximo de iteraciones, subir el grado de precisión a valores poco precisos para considerar la convergencia o volver a intentar la selección de 3 puntos alejados entre sí de forma heurística.\\
-
-Tras algunos intentos fallidos tratando de implementar alguna heurística para escoger siempre los mismos puntos para formar el cluster, decidimos mantener el algoritmo que escoge tres puntos aleatorios introduciendo un número máximo de iteraciones.\\
-
-Presenta la ventaja de que el tiempo que invierte en generarse el cluster es siempre constante a expensas de que va a tardar en converger, alcanzando para la gran mayoría de casos las iteraciones máximas permitidas.\\
-
-\textbf{Método iterativo:}\\
-
-Tal como se indica en la propuest del trabajo, existe la mejora de cambiar el código de iteración para que no se tenga que indicar un número de iteraciones con el fin de optimizar el algoritmo.\\
-
-Este cambio se realiza simplemente introduciendo la precisión para la cual quieres que el algoritmo deje de iterar.\\
-
-En nuestro caso, debido al problema explicado anteriormente solo se nos ve beneficiado en el caso en el que los clusters se formen con el total de los puntos (baricentros).\\
-
-\subsection{Metodología Implementada}
+\subsection{Clases principales y sus métodos}
 
 \underline{Clase \textit{Point}}:\\
 
@@ -317,6 +291,35 @@ Como métodos adicionales tenemos:\\
 	\item{\textbf{drawSolution(minThreshold)}: Recibe como parámetro el mínimo grado de pertenencia ya que se llama al método auxiliar eraseNoise(minThreshold). Tras eliminar los puntos simplemente nos limitamos a dibujar los puntos con colores para que se pueda ver como se realizó la asignación de puntos a cada cluster.}\\
 
 \end{itemize}
+
+\subsection{Elementos descartados}
+
+\textbf{Método para la selección de los tres puntos para realización del circuncentro:} \\
+
+Originalmente habíamos diseñado un método que según cierta heurística era capaz de calcular el circuncentro de 3 puntos dados, sin embargo, siempre nos encontramos con el mismo problema de forma recursiva: no se escogían los puntos de la forma que queríamos.\\
+
+Esto nos empujó a una solución un tanto radical que fue la selección de los puntos de forma aleatoria. Tal como se había planteado el algoritmo, esto no iban a suponer ningún problema ya que introdujimos generaciones, de forma que en alguna de ellas los puntos escogidos serían los ideales y efectivamente funcionaba.
+Sin embargo, esto provocó un problema: Ciclos. Había un determinado momento en el que, por iteración al escogerse los puntos de forma aleatoria, los clusters variaban lo justo y necesario como para no converger.\\
+
+Ante este problema teníamos tres soluciones: implementar un número máximo de iteraciones, subir el grado de precisión a valores poco precisos para considerar la convergencia o volver a intentar la selección de 3 puntos alejados entre sí de forma heurística.\\
+
+Tras algunos intentos fallidos tratando de implementar alguna heurística para escoger siempre los mismos puntos para formar el cluster, decidimos mantener el algoritmo que escoge tres puntos aleatorios introduciendo un número máximo de iteraciones.\\
+
+Presenta la ventaja de que el tiempo que invierte en generarse el cluster es siempre constante a expensas de que va a tardar en converger, alcanzando para la gran mayoría de casos las iteraciones máximas permitidas.\\
+
+\textbf{Método iterativo:}\\
+
+Tal como se indica en la propuest del trabajo, existe la mejora de cambiar el código de iteración para que no se tenga que indicar un número de iteraciones con el fin de optimizar el algoritmo.\\
+
+Este cambio se realiza simplemente introduciendo la precisión para la cual quieres que el algoritmo deje de iterar.\\
+
+En nuestro caso, debido al problema explicado anteriormente solo se nos ve beneficiado en el caso en el que los clusters se formen con el total de los puntos (baricentros).\\
+
+\subsection{Mejoras}
+
+Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, que nos permite crear ejemplos aleatorios, eliminar de estos puntos, insertar ruido y guardarlos como fichero .csv en la ruta deseada; así como la resolución de estos indicando el número de instancias, clusters, precisión y máximo de iteraciones. Además, se aporta otra interfaz gráfica en la que se puede cargar un archivo .csv, al cual se le puede eliminar puntos y añadir ruidos, y resolverlo con los parámetros antes mencionados. Estos archivos siguen el formato indicado en el fichero README.txt.\\
+
+Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} y con los métodos \textit{createAndSolve} and \textit{loadAndSolve} que facilitan las funcionalidades anteriores. Esta interfaz deja al usuario de elegir los valores descritos anteriormente a través de sliders; así como insertarlos a mano.\\
 
 % Glosario
 %clustering
