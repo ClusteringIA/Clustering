@@ -1,5 +1,6 @@
 \documentclass[conference,a4paper]{IEEEtran}
 
+\usepackage[table,xcdraw]{xcolor}
 % Escritura mejorada de fórmulas matemáticas
 \usepackage{amsmath}
 % Inserción de gráficos
@@ -325,6 +326,513 @@ Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, qu
 Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} y con los métodos \textit{createAndSolve} and \textit{loadAndSolve} que facilitan las funcionalidades anteriores. Esta interfaz deja al usuario de elegir los valores descritos anteriormente a través de sliders; así como insertarlos a mano.\\
 
 \section{Resultados}
+
+Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias con centro similar, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicandoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.\\
+
+El conjunto de ejemplos final ha sido probado con una precisión de 0.001, utilizando tanto el baricentro como el circuncentro, y aplicando las siguientes configuraciones: 1 generación y 10 iteraciones, 50 generaciones y 30 iteraciones; y 100 generaciones y 50 iteraciones. Para la primera configuración se realizaron tres ejecuciones del algoritmo para obtene la media del tiempo de ejecución y el porcentaje de fallos; mientras que para las otras no se consideró necesario ya que consisten en múltiples ejecuciones del algoritmo.\\
+
+En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
+
+\newpage
+\subsection{Ejemplo 1}
+
+%Ejemplo
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Experimentacion/Ejemplo1/Ejemplo1}
+\caption{Ejemplo 1: circunferencias con centro similar\\}
+\end{figure}
+
+%Tablas
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{Experimentacion/Ejemplo1/Ejemplo1Completo}
+\caption{Ejemplo 1: Tiempos de todas la configuraciones\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Experimentacion/Ejemplo1/Ejemplo1Fallos}
+\caption{Ejemplo 1: Fallos - Configuraciones 2 y 3\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo1/Ejemplo1Ejecuciones}
+\caption{Ejemplo 1: Ejecuciones - Configuración 1\\}
+\end{figure}
+
+%Capturas
+%Clusters-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_cc}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_mc}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_lc}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
+\end{figure}
+
+%Clusters-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_cc}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_mc_correct}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_lc}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
+\end{figure}
+
+%Ruido-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_mr}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_lr}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
+\end{figure}
+
+%Ruido-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_mr}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_lr_correct}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
+\end{figure}
+
+%Eliminación-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_me}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_le}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
+\end{figure}
+
+%Eliminación-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_me_correct}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_le}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Acierto\\}
+\end{figure}
+
+%Ruido-Eliminación
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_b_1_10_re}
+\caption{Ejemplo 1: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_re_wrong}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
+\end{figure}
+
+\newpage
+\subsection{Ejemplo 2}
+
+%Ejemplo
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Experimentacion/Ejemplo2/Ejemplo2}
+\caption{Ejemplo 2: circunferencias solapadas}
+\end{figure}
+
+%Tablas
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{Experimentacion/Ejemplo2/Ejemplo2Completo}
+\caption{Ejemplo 2: Tiempos de todas la configuraciones\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Experimentacion/Ejemplo2/Ejemplo2Fallos}
+\caption{Ejemplo 2: Fallos - Configuraciones 2 y 3\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo2/Ejemplo2Ejecuciones}
+\caption{Ejemplo 2: Ejecuciones - Configuración 1\\}
+\end{figure}
+
+%Capturas
+%Clusters-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_cc_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_mc_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
+\end{figure}
+
+%Clusters-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_cc_correct}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_cc_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_mc_correct}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_mc_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_lc_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
+\end{figure}
+
+%Ruido-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
+\end{figure}
+
+%Ruido-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
+\end{figure}
+
+%Eliminación-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_me_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
+\end{figure}
+
+%Eliminación-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_me_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
+\end{figure}
+
+%Ruido-Eliminación
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_re_wrong}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
+\end{figure}
+
+\newpage
+\subsection{Ejemplo 3}
+
+%Ejemplo
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Experimentacion/Ejemplo3/Ejemplo3}
+\caption{Ejemplo 3: circunferencias separadas}
+\end{figure}
+
+%Tablas
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{Experimentacion/Ejemplo3/Ejemplo3Completo}
+\caption{Ejemplo 3: Tiempos de todas la configuraciones\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Experimentacion/Ejemplo3/Ejemplo3Fallos}
+\caption{Ejemplo 3: Fallos - Configuraciones 2 y 3\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo3/Ejemplo3Ejecuciones}
+\caption{Ejemplo 3: Ejecuciones - Configuración 1\\}
+\end{figure}
+
+%Capturas
+%Clusters-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_cc_correct}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_cc_wrong}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_mc_wrong}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong}
+\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
+\end{figure}
+
+%Clusters-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_cc_correct}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_cc_wrong}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_lc}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
+\end{figure}
+
+%Ruido-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_mr}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lr_correct}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lr_wrong}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
+\end{figure}
+
+%Ruido-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_mr}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_lr}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
+\end{figure}
+
+%Eliminación-Baricentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_me}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_le_correct}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
+\end{figure}
+
+%Eliminación-Circuncentro
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_me_correct}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.6, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
+\end{figure}
+
+%Ruido-Eliminación
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_re_correct}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong}
+\caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
+\end{figure}
 
 \section{Conclusiones}
 
