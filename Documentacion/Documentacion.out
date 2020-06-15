@@ -1,12 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
-\BOOKMARK [1][-]{section.2}{Investigaci\363n}{}% 2
-\BOOKMARK [1][-]{section.3}{Metodolog\355a}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Dominio del problema y generaci\363n de ejemplos}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Estructura de datos}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{C\341lculo de circunferencias}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.4}{C\341lculo de grados de pertenencia}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.5}{Implementaci\363n del esquema general}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.6}{Clases principales y sus m\351todos}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.7}{Elementos descartados}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.8}{Mejoras}{section.3}% 11
-\BOOKMARK [1][-]{section*.1}{Referencias}{}% 12
+\BOOKMARK [1][-]{section.2}{Preliminares}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{M\351todos Empleados}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Investigaci\363n Preliminar}{subsection.2.1}% 4
+\BOOKMARK [1][-]{section.3}{Metodolog\355a}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Dominio del problema y generaci\363n de ejemplos}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Estructura de datos}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{C\341lculo de circunferencias}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{C\341lculo de grados de pertenencia}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.5}{Implementaci\363n del esquema general}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.6}{Clases principales y sus m\351todos}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.7}{Elementos descartados}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.8}{Mejoras}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Resultados}{}% 14
+\BOOKMARK [1][-]{section.5}{Conclusiones}{}% 15
+\BOOKMARK [1][-]{section*.1}{Referencias}{}% 16
