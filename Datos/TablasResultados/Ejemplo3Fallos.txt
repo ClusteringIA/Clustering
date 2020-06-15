@@ -1,0 +1,24 @@
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\begin{tabular}{
+>{\columncolor[HTML]{EFEFEF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |
+>{\columncolor[HTML]{FFFFFF}}c |
+>{\columncolor[HTML]{FFFFFF}}c |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\cline{2-5}
+\cellcolor[HTML]{FFFFFF}                                                        & \cellcolor[HTML]{EFEFEF}\textbf{B} & \cellcolor[HTML]{EFEFEF}\textbf{C} & \cellcolor[HTML]{EFEFEF}\textbf{B} & \cellcolor[HTML]{EFEFEF}\textbf{C} \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Generaciones}}             & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{50}}                & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{100}}               \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Iteraciones}}              & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{30}}                & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{50}}                \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Nº cluster correcto}}      & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Nº clusters correcto +1}}  & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Nº clusters correcto -1}}  & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Ruido = 1.5}}              & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Ruido = 0.5}}              & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Eliminación \% = 0.6}}     & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Eliminación \% = 0.2}}     & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{Ruido \& Elim = 0.4, 0.7}} & 0                                  & 0                                  & 0                                  & 0                                  \\ \hline
+\end{tabular}
+\end{table}
