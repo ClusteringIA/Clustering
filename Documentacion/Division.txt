@@ -1,3 +1,5 @@
+Hecho:
+
 (Kike)
 -Introduccion:
 	- De que va nuestro trabajo
@@ -16,13 +18,22 @@
 	- Elementos implmentados que se descartaron: 3 puntos alejado circunferencia (un pelín de pseudocódigo mama mio), 'bc' y por último método iterativo
 	- Metodología implementada: De todas destacamos Point, Circle, ClusteringSolver y Solution
 
-(Kike y Vekto): 10 cada uno:
+(Kike y Vekto): Hecho
 - Experimentación
 	- Pillar fotitos y comentar resultados
+
+- Bibliografía
+
+Que falta:
+
+- Resumen y modificar introducción (Keke)
+- pseudocódigo del learn (keke)
+- experimentación (Vekto de momentillo)
+
 (Kike y Vekto toguether en discord)
 - Conclusiones
 	- Circuncentro < precisión mejores resultados, no comparte bien (más clusters que los que hay), con menos clusters la resta la ahce bien y el resto se comparte. con mucho ruido lo intenta
 	- Baricentro > precisión, más rápido pero menor preciso, comparte mejor porque funcion por densidad, peca de generoso, con mucho ruido se la saca
 	- El algoritmo final deberia ser baricentro + ultima iteración == circuncentro por generación --> no tan óptimo pero aprovechamos la velocidad del baricentro, circulos concentricos es cosas del destino
 
-- Bibliografía
+-ANEXO y README.txt

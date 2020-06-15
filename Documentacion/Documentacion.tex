@@ -70,7 +70,7 @@
 
 \textbf{\textit{Resumen} -- El objetivo principal del trabajo es tratar de dar un catálogo de las posibles configuraciones con el objetivo de resolver diferentes escenarios de clustering}\\
 
-\textbf{\textit{Palabras claves} --}
+\textbf{\textit{Palabras claves} -- clustering, cluster(s), sorting}
 
 \section{Introducción}
 
@@ -88,7 +88,13 @@ Esto resultará en la realización del código propuesto para resolver el proble
 
 De esta forma, tendremos como conclusión un conjunto de decisiones empíricas para diferentes configuraciones y diferentes escenarios donde podremos ver que nos interesa realizar.\\
 
-\section{Investigación}
+%Estructura del proyecto
+
+\section{Preliminares}
+
+\subsection{Métodos Empleados}
+
+\subsubsection{Investigación Preliminar}
 
 Para la realización de nuestro trabajo, investigamos respecto al funcionamiento de los diferentes algoritmos utilizados.\\
 
@@ -104,7 +110,6 @@ Este es el algoritmo que es presentado en las transparencias de teoría. Según 
 
 Este algoritmo consiste, en como ya se mencionó anteriormente, seleccionar tantos puntos considerados como centros de los clusters que consideramos que hay según la representación dimensional de los datos. El algoritmo es iterativo, es decir, con cada iteración los centros se van desplazando de forma que se sitúen en el centro de cada clúster. Esto se consigue midiendo la distancia de los puntos con cada centro para ver a cuáles corresponden.\\
 
-\clearpage
 La ventaja de este método es que un algoritmo que es considerado bastante rápido con una complejidad de $\mathcal{O}(n)$. Sin embargo, partes con la premisa de que debes seleccionar una serie de clúster. Esta decisión no siempre es trivial. Una alternativa es realizar aproximaciones como, en función de la cantidad de puntos, introducir x centros, aunque puede provocar resultados diferentes, por ende resultando en una falta de consistencia.\\
 
 Otra posible optimización de este algoritmo es ahorrarnos el tener que situar los puntos manualmente y simplemente indicar cuantos queremos. Esto suele realizarse mediante la inicialización aleatoria de estos puntos, no obstante, volvemos a encontrarnos con el problema de la falta de consistencia.\\
@@ -133,8 +138,6 @@ Este algoritmo presenta ventajas respecto a K-Means ya que como en Mean-Shift no
 
 El artículo habla de otros dos algoritmos los cuales no consideramos relevantes para el objetivo que se nos propone, pero son muy interesantes y presentan alternativas a la hora de agrupar diferentes grupos de puntos.\\
 
-%Estructura del proyecto
-\clearpage
 \section{Metodología}
 
 \subsection{Dominio del problema y generación de ejemplos}
@@ -161,8 +164,8 @@ A continuación, se realizó la implementación de los objetivos específicos re
 
 De esta manera, se diseñó para almacenar la información de cada iteración del algoritmo una estructura de datos basada en dos arrays: 
 \begin{itemize}
-	\item Clusters: Almacena objetos de la clase \textit{Circunference}, los cuales representan. El orden de estos en el array viene definido por como se inicializaron.
-	\item Threshold: Almacena arrays con los grados de pertenencia de cada punto a cada cluster. El orden de estos viene definido por como estuvieran los puntos ordenados en el archivo .csv.\\
+	\item Clusters: Almacena objetos de la clase \textit{Circunference}, los cuales representan. El orden de estos en el array viene definido por como se inicializaron.\\
+	\item Threshold: Almacena arrays con los grados de pertenencia de cada punto a cada cluster. El orden de estos viene definido por como estuvieran los puntos ordenados en el archivo .csv.
 \end{itemize}
 
 \subsection{Cálculo de circunferencias}
@@ -321,10 +324,9 @@ Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, qu
 
 Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} y con los métodos \textit{createAndSolve} and \textit{loadAndSolve} que facilitan las funcionalidades anteriores. Esta interfaz deja al usuario de elegir los valores descritos anteriormente a través de sliders; así como insertarlos a mano.\\
 
-% Glosario
-%clustering
-%clúster, clústeres 
-%sorting
+\section{Resultados}
+
+\section{Conclusiones}
 
 %Bibliografía
 
@@ -339,7 +341,7 @@ Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} 
 
 	\bibitem{georgeSeif2}
 	\label{bib:georgeSeif2}
-	Seif, G., 2020. SuperProf Material Didáctico - Circuncentro. [online] Medium. 
+	Seif, G., Undated. SuperProf Material Didáctico - Circuncentro. [online] Medium. 
 	Available at: \href{https://www.superprof.es/apuntes/escolar/matematicas/analitica/recta/circuncentro.html}{https://www.superprof.es/apuntes/escolar/matematicas/analitica/recta/circuncentro.html}
 	[Accessed 22 April 2020].\\
 	
