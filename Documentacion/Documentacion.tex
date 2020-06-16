@@ -138,9 +138,44 @@ Este algoritmo también está basado en la agrupación de los puntos en función
 
 El funcionamiento del algoritmo es muy simple. Sen encarga de ir recorriendo todos los puntos del conjunto de puntos y mira en un radio alrededor de este. Si se encuentra un punto dentro de este radio, se le asigna como parte del clúster. Los puntos que se leen se marcan como visitados. En el momento que ha acabado de "agrupar un conjunto de puntos" pasa al siguiente en la lista de puntos.
 
-Este algoritmo presenta ventajas respecto a K-Means ya que como en Mean-Shift no es necesario indicar de antemano el número de agrupaciones que identificamos o vamos a querer, además de que a difrencia de Mean-Shift es capaz de identificar figuras. Sin embargo, también tiene su desventaja la cual es que requiere cierta distancia mínima entre los puntos para poder agrupar todo en la misma figura, ya que la distancia a la que miramos, conocida como Epsilon, varía en función de la densidad de puntos en esa zona.
+Este algoritmo presenta ventajas respecto a K-Means ya que como en Mean-Shift no es necesario indicar de antemano el número de agrupaciones que identificamos o vamos a querer, además de que a difrencia de Mean-Shift es capaz de identificar figuras. Sin embargo, también tiene su desventaja la cual es que requiere cierta distancia mínima entre los puntos para poder agrupar todo en la misma figura, ya que la distancia a la que miramos, conocida como Epsilon, varía en función de la densidad de puntos en esa zona.\\
 
-El artículo habla de otros dos algoritmos los cuales no consideramos relevantes para el objetivo que se nos propone, pero son muy interesantes y presentan alternativas a la hora de agrupar diferentes grupos de puntos.
+\paragraph{\textbf{Esperanza - Maximización utilizando Modelo de Mezclas Gaussianas (GMM)}}
+
+Esperanza - Maximización es un algoritmo estadístico para encontrar los parámetros de un modelo cuando los datos tienen variables desconocidas. Estas variables reciben el nombre de variables latentes y se busca optimizarlas utilizando la información de la que disponemos. Consiste en dos pasos:
+\begin{itemize}
+	\item Paso E (Esperanza): Usando los datos disponibles estimamos las variables latentes.\\
+	\item Paso M (Maximización): Basándose en los valores estimados actualizamos el resto de parámetros.\\
+\end{itemize}
+
+En este caso, el modelo será el Modelo de Mezclas Gaussianas. Este asume que los datos de entrada se encuentran organizados siguiendo distribuciones gaussianas. De este modo, nuestros clusters pasarán a ser estas distribuciones las cuales tendrán tres parámetros: la media, la covarianza y la densidad de dicha distribución.
+
+En la inicialización del algoritmo se elige el número de clusters de forma manual y se definen de forma aleatoria la media y covarianza de cada uno. La inicialización de estos últimos no es tan esencial como en otros algoritmos ya que se optimiza con mucha rapidez.\\
+En cada iteración realizaremos dos pasos:\\
+
+\begin{itemize}
+	\item Paso E: Para cada punto del conjunto de datos calcularemos la probabilidad de que este pertenezca a cada uno de los clusters. Esta probabilidad es directamente proporcional a la distancia del punto al centro de la distribución gaussiana; ya que al utilizar este tipos de distribución asumimos que la mayoría de puntos se encuentran cercanos al centro del cluster. Se utiliza la siguiente fórmula:\\
+\[r_{ic}=\frac{\pi_{c}N(x_{i}|\mu_{c},\varSigma_{c})}{\Sigma_{c'}(\pi_{c'}N(x_{i}|\mu_{c'},\varSigma_{c'}))}\]
+\begin{gather}
+r_{ic} \text{ = probabilidad de que } x_{i} \text{ pertenezca al cluster c} \\
+\text{N = distribucion normal} \\
+\mu_{c} \text{ y } \varSigma_{c} \text{ = media y covarianza de un cluster c} \\
+x_{i} \text{ = un punto del conjunto de datos}
+\end{gather}
+
+	\item Paso M: Una vez calculado el paso anterior recalculamos los parámetros de cada cluster de forma que maximicen las probabilidades de pertenencia de cada punto a su cluster.
+
+\begin{gather}
+\text{Densidad = } \Pi=\frac{\text{Nº puntos asignados al cluster}}{\text{Nº total de puntos}} \\
+\mu_{c}=\frac{1}{\text{Nº puntos asignados al cluster}}\Sigma_{i}r_{ic}x_{i}\\
+\varSigma_{c}=\frac{1}{\text{Nº puntos asignados al cluster}}\Sigma_{i}r_{ic}(x_{i}-\mu_{c})^T(x_{i}-\mu_{c})
+\end{gather}
+
+\end{itemize}
+
+Las iteraciones se seguiran realizando hasta que se converja, es decir, que los parámetros de las distribuciones no varien mucho con respecto a los de la iteración anterior.\\
+
+Este algoritmo aunque parecido a K-Medias presenta una serie de ventajas. La primera es que gracias a que utiliza además de la media la covarianza los clusters no están limitados a ser circunferencias, sino que pueden tomar cualquier tipo de forma elíptica; lo cual permite que el clustering se pueda realizar de forma correcta en casos en los que para K-Medias sería imposible, por ejemplo, en clusters concéntricos o clusters cuya forma no es circular. Además de esto, al funcionar con probabilidades, los puntos no tienen porqué pertenecer a un único cluster, sino que pueden tener una probabilidad de pertenencia a cada uno.
 
 %Estructura del proyecto
 
