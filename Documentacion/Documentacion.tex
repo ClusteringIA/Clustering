@@ -187,7 +187,7 @@ La primera versión de este método calculaba el centro como el baricentro del c
 \caption{Circunferencia calculada usando el baricentro}
 \end{figure}
 
-Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, \hyperref[bib:georgeSeif]{Cálculo del circuncentro}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.\\
+Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, según \hyperref[bib:georgeSeif]{Referencia 3}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.\\
 
 \begin{figure}[H]
 \centering
@@ -327,42 +327,46 @@ Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} 
 
 \section{Resultados}
 
-Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias con centro similar, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicandoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.\\
+Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias concéntricas, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicandoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.\\
 
 El conjunto de ejemplos final ha sido probado con una precisión de 0.001, utilizando tanto el baricentro como el circuncentro, y aplicando las siguientes configuraciones: 1 generación y 10 iteraciones, 50 generaciones y 30 iteraciones; y 100 generaciones y 50 iteraciones. Para la primera configuración se realizaron tres ejecuciones del algoritmo para obtene la media del tiempo de ejecución y el porcentaje de fallos; mientras que para las otras no se consideró necesario ya que consisten en múltiples ejecuciones del algoritmo.\\
 
 En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 
 \newpage
-\subsection{Ejemplo 1}
-
-%Ejemplo
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.8]{Experimentacion/Ejemplo1/Ejemplo1}
-\caption{Ejemplo 1: circunferencias con centro similar\\}
-\end{figure}
+\subsection{Ejemplo 1: Circunferencias Concéntricas}
 
 %Tablas
 \begin{figure}[H]
 \centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo1/Ejemplo1Ejecuciones}
+\caption{Ejemplo 1: Ejecuciones - Configuración 1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[scale=0.6]{Experimentacion/Ejemplo1/Ejemplo1Completo}
-\caption{Ejemplo 1: Tiempos de todas la configuraciones\\}
+\caption{Ejemplo 1: Tiempos de todas la configuraciones}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{Experimentacion/Ejemplo1/Ejemplo1Fallos}
-\caption{Ejemplo 1: Fallos - Configuraciones 2 y 3\\}
+\caption{Ejemplo 1: Fallos - Configuraciones 2 y 3}
 \end{figure}
 
+Se puede observar como con una sola generación el porcentaje de fallo es muy alto de forma general y que el circuncentro da mejores resultados que el baricentro. Además, destaca que al aumentar las generaciones e iteraciones el circuncentro mejora tanto que solo da fallo en presencia de mucho ruido; mientras que el baricentro solo mejora en el caso de realizarse el algoritmo con un número de cluster igual al correcto menos 1, pues agrupa las circunferencias concéntricas. También hay que destacar que el tiempo de ejecución del circuncentro es mucho mayor al del baricentro. Esto se repetirá en el resto de ejemplos.
+
+%Ejemplo
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Experimentacion/Ejemplo1/Ejemplo1Ejecuciones}
-\caption{Ejemplo 1: Ejecuciones - Configuración 1\\}
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/Ejemplo1}
+\caption{Ejemplo 1: circunferencias concéntricas\\}
 \end{figure}
 
 %Capturas
+\textbf{Pruebas con número de clusters:}\\
+
 %Clusters-Baricentro
 \begin{figure}[H]
 \centering
@@ -407,6 +411,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
 \end{figure}
 
+\textbf{Pruebas con ruido:}\\
+
 %Ruido-Baricentro
 \begin{figure}[H]
 \centering
@@ -438,6 +444,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong}
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
 \end{figure}
+
+\textbf{Pruebas con eliminación:}\\
 
 %Eliminación-Baricentro
 \begin{figure}[H]
@@ -471,6 +479,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Acierto\\}
 \end{figure}
 
+\newpage
+\textbf{Pruebas con eliminación y ruido:}\\
+
 %Ruido-Eliminación
 \begin{figure}[H]
 \centering
@@ -485,16 +496,15 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \end{figure}
 
 \newpage
-\subsection{Ejemplo 2}
-
-%Ejemplo
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.8]{Experimentacion/Ejemplo2/Ejemplo2}
-\caption{Ejemplo 2: circunferencias solapadas}
-\end{figure}
+\subsection{Ejemplo 2: Circunferencias Solapadas}
 
 %Tablas
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo2/Ejemplo2Ejecuciones}
+\caption{Ejemplo 2: Ejecuciones - Configuración 1\\}
+\end{figure}
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{Experimentacion/Ejemplo2/Ejemplo2Completo}
@@ -507,13 +517,19 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 2: Fallos - Configuraciones 2 y 3\\}
 \end{figure}
 
+De nuevo el porcentaje de fallo es muy alto para una sola generación y se observa una mejoría destacable aumentando las generaciones e iteraciones. Además, el circuncentro muestra otra vez un mayor nivel de mejora salvo en presencia de mucho ruido; donde el baricentro responde mejor. Sin embargo, ambos muestran buenos resultados en presencia de ruido pero con un menor número de solapamientos, esto se puede observar con un ejemplo adicional con menor solapamiento añadido al final de esta sección.
+
+%Ejemplo
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Experimentacion/Ejemplo2/Ejemplo2Ejecuciones}
-\caption{Ejemplo 2: Ejecuciones - Configuración 1\\}
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/Ejemplo2}
+\caption{Ejemplo 2: circunferencias solapadas}
 \end{figure}
 
 %Capturas
+
+\textbf{Pruebas con número de clusters:}\\
+
 %Clusters-Baricentro
 \begin{figure}[H]
 \centering
@@ -570,6 +586,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
 \end{figure}
 
+\textbf{Pruebas con ruido:}\\
+
 %Ruido-Baricentro
 \begin{figure}[H]
 \centering
@@ -593,8 +611,10 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong}
-\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\\\\\}
 \end{figure}
+
+\textbf{Pruebas con eliminación:}\\
 
 %Eliminación-Baricentro
 \begin{figure}[H]
@@ -622,6 +642,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
 \end{figure}
 
+\newpage
+\textbf{Pruebas con eliminación y ruido:}\\
+
 %Ruido-Eliminación
 \begin{figure}[H]
 \centering
@@ -635,17 +658,57 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
 \end{figure}
 
-\newpage
-\subsection{Ejemplo 3}
+\textbf{Ejemplo con menor solapamiento, Ruido = 1.5:}\\
 
-%Ejemplo
+%EjemploMenorSolapamiento
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{Experimentacion/Ejemplo3/Ejemplo3}
-\caption{Ejemplo 3: circunferencias separadas}
+\includegraphics[scale=0.8]{Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoMaxRuido}
+\caption{Ejemplo con menor solapamiento, Ruido = 1.5}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct}
+\caption{Ejemplo con menor solapamiento: Baricentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_mr_correct}
+\caption{Ejemplo con menor solapamiento: Circuncentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
+\end{figure}
+
+\textbf{Ejemplo con menor solapamiento, Ruido = 0.7, Porcentaje de Eliminación = 0.4:}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoElimRuido}
+\caption{Ejemplo con menor solapamiento, porcentaje de eliminación = 0.4, ruido = 0.7}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct}
+\caption{Ejemplo con menor solapamiento: Baricentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de Eliminación = 0.4, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_re_correct}
+\caption{Ejemplo con menor solapamiento: Circuncentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de Eliminación = 0.4, Acierto\\}
+\end{figure}
+
+\newpage
+\subsection{Ejemplo 3: Circunferencias Separadas}
+
 %Tablas
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo3/Ejemplo3Ejecuciones}
+\caption{Ejemplo 3: Ejecuciones - Configuración 1\\}
+\end{figure}
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{Experimentacion/Ejemplo3/Ejemplo3Completo}
@@ -658,13 +721,19 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 3: Fallos - Configuraciones 2 y 3\\}
 \end{figure}
 
+En este ejemplo el porcentaje de fallo con una sola generación es mucho menor al de los anteriores, observándose que los fallos se concentran en las pruebas con eliminación principalmente. Además, se puede observar que el aumento de generaciones e iteraciones produce una mejora tan notable que ya con la segunda configuración no se presenta ningún fallo.
+
+%Ejemplo
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Experimentacion/Ejemplo3/Ejemplo3Ejecuciones}
-\caption{Ejemplo 3: Ejecuciones - Configuración 1\\}
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/Ejemplo3}
+\caption{Ejemplo 3: circunferencias separadas}
 \end{figure}
 
 %Capturas
+
+\textbf{Pruebas con número de clusters:}\\
+
 %Clusters-Baricentro
 \begin{figure}[H]
 \centering
@@ -699,13 +768,13 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct}
-\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong}
-\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
 \end{figure}
 
 %Clusters-Circuncentro
@@ -739,6 +808,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
 \end{figure}
 
+\textbf{Pruebas con ruido:}\\
+
 %Ruido-Baricentro
 \begin{figure}[H]
 \centering
@@ -770,6 +841,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_lr}
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
 \end{figure}
+
+\newpage
+\textbf{Pruebas con eliminación:}\\
 
 %Eliminación-Baricentro
 \begin{figure}[H]
@@ -808,6 +882,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.\\
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong}
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
 \end{figure}
+
+\newpage
+\textbf{Pruebas con eliminación y ruido:}\\
 
 %Ruido-Eliminación
 \begin{figure}[H]
