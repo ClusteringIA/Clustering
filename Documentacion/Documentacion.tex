@@ -96,13 +96,9 @@ Esto resultará en la realización del código propuesto para resolver el proble
 
 De esta forma, tendremos como conclusión un conjunto de decisiones empíricas para diferentes configuraciones y diferentes escenarios donde podremos ver que nos interesa realizar.
 
-%Estructura del proyecto
-
-\section{Preliminares}
-
-\subsection{Métodos Empleados}
-
-\subsubsection{Investigación Preliminar}
+%Marco teórico
+\clearpage
+\section{Marco Teórico}
 
 Para la realización de nuestro trabajo, investigamos respecto al funcionamiento de los diferentes algoritmos utilizados.
 
@@ -110,7 +106,7 @@ Según la  \hyperref[bib:georgeSeif]{Referencia 1}:
 
 Empieza con una pequeña introducción respecto a lo que es Clustering en Machine Learning. Una técnica para poder separar un conjunto de puntos dados. Estos puntos deben de poseer algún tipo de característica común que nos permita poder identificar unos de otros y así poder agruparlos.
 
-Habla de 5 técnicas de algoritmos de Clustering: K-Means, Mean-Shift, Density-Based Spatial con Ruido, Expectation-Maximization (EM) usando mezcla de modelos Gaussianos (GMM) y Aglomerative Hierarchical Clustering. Cada uno presenta sus ventajas y desventajas, que iré desarrollando a lo largo de los siguientes puntos:
+Habla de 5 técnicas de algoritmos de Clustering: K-Means, Mean-Shift, Density-Based Spatial con Ruido, Expectation-Maximization (EM) usando mezcla de modelos Gaussianos (GMM) y Aglomerative Hierarchical Clustering. Cada uno presenta sus ventajas y desventajas, que iré desarrollando a lo largo de los siguientes puntos:\\
 
 \paragraph{\textbf{K-Means}}
 
@@ -124,7 +120,7 @@ Otra posible optimización de este algoritmo es ahorrarnos el tener que situar l
 
 La solución a esta falta de consistencia sería el uso de generaciones (\hyperref[bib:clustering]{Referencia 2}). Instanciamos varias veces los clusteres con posiciones aleatorias y nos quedamos con el que de todas las generaciones agrupe de mejor forma los puntos.
 
-Por otro lado, la Referencia ofrece una alternativa a K-Means conocida como K-Medians. La principal diferencia es que a la hora de recomputar los centros nos basamos en la mediana y no en la media. Este método es menos sensitivo a valores atípicos sin embargo es más costoso de forma computacional ya que requiere \textit{sorting} para computar la mediana del vector de los datos.
+Por otro lado, la Referencia ofrece una alternativa a K-Means conocida como K-Medians. La principal diferencia es que a la hora de recomputar los centros nos basamos en la mediana y no en la media. Este método es menos sensitivo a valores atípicos sin embargo es más costoso de forma computacional ya que requiere \textit{sorting} para computar la mediana del vector de los datos.\\
 
 \paragraph{\textbf{Mean-Shift}}
 
@@ -134,7 +130,7 @@ Lo primero que se hacer es inicializar un punto de forma aleatoria en el espacio
 
 La forma en la que este algoritmo converge es que, en vez de inicializar una única ventana, se inicializan varias distribuidas de forma uniforme por el espacio de puntos. Vamos iterando hasta que las distancia entre el centro de las ventanas sean cubiertas por todas las otras ventanas.
 
-La ventaja de este algoritmo respecto a K-Means es que no requerimos de indicar el número de centros que vamos a necesitar, sino que se detectan solos basados en la densidad de puntos, sin embargo, esta ventaja que presenta puede llegar a ser una desventaja. Este método es perfecto para encontrar el centro de los puntos que formen parte de clusters que estén separados y sean densos. En el escenario de que los cluster conformen figuras, tipo el perímetro de un círculo, el algoritmo puede que no agrupe los puntos en único conjunto, sino que haga una subdivisión de estos. Otra desventaja que presenta es que se deben escoger la longitud del radio resultando factor determinista que puede provocar diferentes resultados.
+La ventaja de este algoritmo respecto a K-Means es que no requerimos de indicar el número de centros que vamos a necesitar, sino que se detectan solos basados en la densidad de puntos, sin embargo, esta ventaja que presenta puede llegar a ser una desventaja. Este método es perfecto para encontrar el centro de los puntos que formen parte de clusters que estén separados y sean densos. En el escenario de que los cluster conformen figuras, tipo el perímetro de un círculo, el algoritmo puede que no agrupe los puntos en único conjunto, sino que haga una subdivisión de estos. Otra desventaja que presenta es que se deben escoger la longitud del radio resultando factor determinista que puede provocar diferentes resultados.\\
 
 \paragraph{\textbf{Density-Based Spatial Clustering con ruidos (DBSCAN)}}
 
@@ -146,8 +142,12 @@ Este algoritmo presenta ventajas respecto a K-Means ya que como en Mean-Shift no
 
 El artículo habla de otros dos algoritmos los cuales no consideramos relevantes para el objetivo que se nos propone, pero son muy interesantes y presentan alternativas a la hora de agrupar diferentes grupos de puntos.
 
+%Estructura del proyecto
 
-\subsubsection{Técnicas Empleadas}
+\clearpage
+\section{Preliminares}
+
+\subsection{Métodos Empleados}
 
 Al fin y al cabo la investigación realizada nos ayudó mucho a la hora de entender como abordar este problema (aún teniendo un algoritmo propuesto), ya que como se indica en la subsubsección de la investigación, un artículo nos dió la idea de hacer uso de una implementación de algoritmo genético. La idea es realizar varias inicializaciones con centros de cluster aleatorios y quedarnos con el mejor resultado trás la iteración de todas las generaciones.
 
@@ -201,7 +201,7 @@ La primera versión de este método calculaba el centro como el baricentro del c
 \caption{Circunferencia calculada usando el baricentro}
 \end{figure}
 
-Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, \hyperref[bib:georgeSeif]{Cálculo del circuncentro}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.
+Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, según \hyperref[bib:georgeSeif2]{Referencia 3}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.
 
 \begin{figure}[H]
 \centering
@@ -231,7 +231,7 @@ Para la inicialización, desde un inicio se decidió instanciar las circunferenc
 
 En cuanto al criterio de parada, primero se implementó con un número fijo de iteraciones ya que era más sencillo y permitía comprobar el comportamiento del algoritmo con facilidad; aunque finalmente se acabó implementando un criterio de parada basado en que los centros y radios de los clusters no variaran en una cantidad determinada por el usuario, correspondiente al parámetro \textit{precision}. Sin embargo, es necesario aportar un número máximo de iteraciones pues en el caso de utilizar el circuncentro para recalcular los clusters, al tomarse puntos aleatorios, los centros y radios pueden aumentar sustancialmente. Este problema no se produce al utilizar el baricentro.
 
-Por último, para la presentación final de los datos, se creó la clase  \textit{Solution}; la cual utiliza la información contenida en un objeto \textit{ClusteringSolver} que ya ha realizado el método  \textit{learn}, es decir, ya ha obtenido el resultado del algoritmo. Esta clase nos permite eliminar puntos cuyo grado de pertenencia final sea menor al elegido por el usuario, además de representar los datos de forma gráfica mostrando las circunferencias junto con los puntos coloreados en función del cluster al que pertenecen. Actualmente, esta representación tiene como límite siete clusters, ya que a partir del octavo los colores se repetirán y no se podrá saber con certeza si la asignación es correcta. Aún así, es facilmente escalable.
+Por último, para la presentación final de los datos, se creó la clase  \textit{Solution}; la cual utiliza la información contenida en un objeto \textit{ClusteringSolver} que ya ha realizado el método  \textit{learn}, es decir, ya ha obtenido el resultado del algoritmo. Esta clase nos permite eliminar puntos cuyo grado de pertenencia final sea menor al elegido por el usuario, además de representar los datos de forma gráfica mostrando las circunferencias junto con los puntos coloreados en función del cluster al que pertenecen. Si esta representación es de más de seis clusters,  los colores de puntos pertenecientes a distintas circunferencias se repetirán y no se podrá saber con certeza si la asignación es correcta; aunque aún será visible si las circunferencias se han definido correctamente.
 
 Las modificaciones se realizaron una vez implementado todo. Realizando la experimentación se observó que la inicialización de los clusters al ser aleatoria condicionaba mucho el resultado final del algoritmo. De modo, que se decidió investigar sobre ello y se encontró que una técnica bastante utilizada era el lanzamiento del algoritmo con múltiples instancias haciendo uso de una heurística para obtener el mejor resultado de todas ellas. En nuestro caso, la heurística  considera un mejor resultado aquel en el que el sumatorio de las distancias de los puntos a los clusters es menor.
 
@@ -391,41 +391,46 @@ Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} 
 
 \section{Resultados}
 
-Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias con centro similar, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicandoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.
+Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias concéntricas, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicandoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.
 
 El conjunto de ejemplos final ha sido probado con una precisión de 0.001, utilizando tanto el baricentro como el circuncentro, y aplicando las siguientes configuraciones: 1 generación y 10 iteraciones, 50 generaciones y 30 iteraciones; y 100 generaciones y 50 iteraciones. Para la primera configuración se realizaron tres ejecuciones del algoritmo para obtene la media del tiempo de ejecución y el porcentaje de fallos; mientras que para las otras no se consideró necesario ya que consisten en múltiples ejecuciones del algoritmo.
 
 En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 
-\subsection{Ejemplo 1}
-
-%Ejemplo
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.8]{Experimentacion/Ejemplo1/Ejemplo1}
-\caption{Ejemplo 1: circunferencias con centro similar\\}
-\end{figure}
+\newpage
+\subsection{Ejemplo 1: Circunferencias Concéntricas}
 
 %Tablas
 \begin{figure}[H]
 \centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo1/Ejemplo1Ejecuciones}
+\caption{Ejemplo 1: Ejecuciones - Configuración 1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[scale=0.6]{Experimentacion/Ejemplo1/Ejemplo1Completo}
-\caption{Ejemplo 1: Tiempos de todas la configuraciones\\}
+\caption{Ejemplo 1: Tiempos de todas la configuraciones}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{Experimentacion/Ejemplo1/Ejemplo1Fallos}
-\caption{Ejemplo 1: Fallos - Configuraciones 2 y 3\\}
+\caption{Ejemplo 1: Fallos - Configuraciones 2 y 3}
 \end{figure}
 
+Se puede observar como con una sola generación el porcentaje de fallo es muy alto de forma general y que el circuncentro da mejores resultados que el baricentro. Además, destaca que al aumentar las generaciones e iteraciones el circuncentro mejora tanto que solo da fallo en presencia de mucho ruido; mientras que el baricentro solo mejora en el caso de realizarse el algoritmo con un número de cluster igual al correcto menos 1, pues agrupa las circunferencias concéntricas. También hay que destacar que el tiempo de ejecución del circuncentro es mucho mayor al del baricentro. Esto se repetirá en el resto de ejemplos.
+
+%Ejemplo
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Experimentacion/Ejemplo1/Ejemplo1Ejecuciones}
-\caption{Ejemplo 1: Ejecuciones - Configuración 1\\}
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo1/Ejemplo1}
+\caption{Ejemplo 1: circunferencias concéntricas\\}
 \end{figure}
 
 %Capturas
+\textbf{Pruebas con número de clusters:}\\
+
 %Clusters-Baricentro
 \begin{figure}[H]
 \centering
@@ -470,6 +475,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
 \end{figure}
 
+\textbf{Pruebas con ruido:}\\
+
 %Ruido-Baricentro
 \begin{figure}[H]
 \centering
@@ -501,6 +508,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong}
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
 \end{figure}
+
+\textbf{Pruebas con eliminación:}\\
 
 %Eliminación-Baricentro
 \begin{figure}[H]
@@ -534,6 +543,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Acierto\\}
 \end{figure}
 
+\newpage
+\textbf{Pruebas con eliminación y ruido:}\\
+
 %Ruido-Eliminación
 \begin{figure}[H]
 \centering
@@ -547,17 +559,16 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
 \end{figure}
 
-\clearpage
-\subsection{Ejemplo 2}
-
-%Ejemplo
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.8]{Experimentacion/Ejemplo2/Ejemplo2}
-\caption{Ejemplo 2: circunferencias solapadas}
-\end{figure}
+\newpage
+\subsection{Ejemplo 2: Circunferencias Solapadas}
 
 %Tablas
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo2/Ejemplo2Ejecuciones}
+\caption{Ejemplo 2: Ejecuciones - Configuración 1\\}
+\end{figure}
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{Experimentacion/Ejemplo2/Ejemplo2Completo}
@@ -570,13 +581,19 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 2: Fallos - Configuraciones 2 y 3\\}
 \end{figure}
 
+De nuevo el porcentaje de fallo es muy alto para una sola generación y se observa una mejoría destacable aumentando las generaciones e iteraciones. Además, el circuncentro muestra otra vez un mayor nivel de mejora salvo en presencia de mucho ruido; donde el baricentro responde mejor. Sin embargo, ambos muestran buenos resultados en presencia de ruido pero con un menor número de solapamientos, esto se puede observar con un ejemplo adicional con menor solapamiento añadido al final de esta sección.
+
+%Ejemplo
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Experimentacion/Ejemplo2/Ejemplo2Ejecuciones}
-\caption{Ejemplo 2: Ejecuciones - Configuración 1\\}
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo2/Ejemplo2}
+\caption{Ejemplo 2: circunferencias solapadas}
 \end{figure}
 
 %Capturas
+
+\textbf{Pruebas con número de clusters:}\\
+
 %Clusters-Baricentro
 \begin{figure}[H]
 \centering
@@ -633,6 +650,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
 \end{figure}
 
+\textbf{Pruebas con ruido:}\\
+
 %Ruido-Baricentro
 \begin{figure}[H]
 \centering
@@ -656,8 +675,10 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong}
-\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
+\caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\\\\\}
 \end{figure}
+
+\textbf{Pruebas con eliminación:}\\
 
 %Eliminación-Baricentro
 \begin{figure}[H]
@@ -685,6 +706,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
 \end{figure}
 
+\newpage
+\textbf{Pruebas con eliminación y ruido:}\\
+
 %Ruido-Eliminación
 \begin{figure}[H]
 \centering
@@ -698,17 +722,57 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
 \end{figure}
 
-\newpage
-\subsection{Ejemplo 3}
+\textbf{Ejemplo con menor solapamiento, Ruido = 1.5:}\\
 
-%Ejemplo
+%EjemploMenorSolapamiento
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{Experimentacion/Ejemplo3/Ejemplo3}
-\caption{Ejemplo 3: circunferencias separadas}
+\includegraphics[scale=0.8]{Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoMaxRuido}
+\caption{Ejemplo con menor solapamiento, Ruido = 1.5}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct}
+\caption{Ejemplo con menor solapamiento: Baricentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_mr_correct}
+\caption{Ejemplo con menor solapamiento: Circuncentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
+\end{figure}
+
+\textbf{Ejemplo con menor solapamiento, Ruido = 0.7, Porcentaje de Eliminación = 0.4:}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoElimRuido}
+\caption{Ejemplo con menor solapamiento, porcentaje de eliminación = 0.4, ruido = 0.7}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct}
+\caption{Ejemplo con menor solapamiento: Baricentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de Eliminación = 0.4, Acierto\\}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.65]{Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_re_correct}
+\caption{Ejemplo con menor solapamiento: Circuncentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de Eliminación = 0.4, Acierto\\}
+\end{figure}
+
+\newpage
+\subsection{Ejemplo 3: Circunferencias Separadas}
+
 %Tablas
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Experimentacion/Ejemplo3/Ejemplo3Ejecuciones}
+\caption{Ejemplo 3: Ejecuciones - Configuración 1\\}
+\end{figure}
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{Experimentacion/Ejemplo3/Ejemplo3Completo}
@@ -721,13 +785,19 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 3: Fallos - Configuraciones 2 y 3\\}
 \end{figure}
 
+En este ejemplo el porcentaje de fallo con una sola generación es mucho menor al de los anteriores, observándose que los fallos se concentran en las pruebas con eliminación principalmente. Además, se puede observar que el aumento de generaciones e iteraciones produce una mejora tan notable que ya con la segunda configuración no se presenta ningún fallo.
+
+%Ejemplo
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Experimentacion/Ejemplo3/Ejemplo3Ejecuciones}
-\caption{Ejemplo 3: Ejecuciones - Configuración 1\\}
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/Ejemplo3}
+\caption{Ejemplo 3: circunferencias separadas}
 \end{figure}
 
 %Capturas
+
+\textbf{Pruebas con número de clusters:}\\
+
 %Clusters-Baricentro
 \begin{figure}[H]
 \centering
@@ -762,13 +832,13 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct}
-\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong}
-\caption{Ejemplo 2: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
+\caption{Ejemplo 3: Baricentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
 \end{figure}
 
 %Clusters-Circuncentro
@@ -802,6 +872,8 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
 \end{figure}
 
+\textbf{Pruebas con ruido:}\\
+
 %Ruido-Baricentro
 \begin{figure}[H]
 \centering
@@ -833,6 +905,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_lr}
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 1.5, Acierto\\}
 \end{figure}
+
+\newpage
+\textbf{Pruebas con eliminación:}\\
 
 %Eliminación-Baricentro
 \begin{figure}[H]
@@ -872,6 +947,9 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Porcentaje de eliminación = 0.2, Fallo\\}
 \end{figure}
 
+\newpage
+\textbf{Pruebas con eliminación y ruido:}\\
+
 %Ruido-Eliminación
 \begin{figure}[H]
 \centering
@@ -897,8 +975,35 @@ En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
 \end{figure}
 
-\clearpage
 \section{Conclusiones}
+
+Las conclusiones obtenidas tras realizar la experimentación con diferentes ejemplos marca una clara diferencia entre el baricentro y circuncentro y el realizarlo entre una generación y varias.
+
+Desde el aspecto de las generaciones, es importante destacar que si la inicialización no es correcta, el algoritmo da igual lo bueno que sea que no va s devolver un resultado correcto en la gran mayoría de casos. Por ello trás la experimentación recomendamos ejecutar el algoritmo con un mínimo de 100 generaciones y 50 iteraciones ya que suele ofrecer resultados correctos.
+
+Desde el aspecto del métdo de cálculo de la circunferencia, por un lado, el baricentro presenta la ventaja de que es más rápido que el circuncentro, sin embargo, es menos preciso. A la hora de resolver ejemplos con mucho ruido funciona bastante mejor que el circuncentro y a la hora de que existan mas clusters de los ideales, como este se ve afectado por la densidad de puntos más que los puntos en si, comparte mejor esos puntos entre los clusters restantes.
+
+Por otro lado, el circuncentro es mucho más preciso que el baricentro en escenarios donde haya un mínimo de ruido y eliminaciones. Presenta el incoveniente de tardar bastante más que el baricentro  sin embargo, cuando existe la eliminación de muchos puntos funciona mejor que el baricentro.
+
+Para poder definir alternativas con el fin de ver que método de agrupación usar, es necesario dividir los datos de entradas en escenarios los cuales nosotros hemos definidos como: clusters separados, solapados y concéntricos.
+
+Según los diferentes escenarios, tenemos:
+
+\begin{itemize}
+
+\item{\textbf{Clusters separados:} Por lo general, en términos de eficiencia, se debería usar el baricentro ya que es más rápido que el circuncentro pero peca de precisión. En cuanto los datos de entrada presenten algún tipo de eliminación interesa más el circuncentro ya que este no itera en función de la densidad de puntos.}
+
+\item{\textbf{Cluster solapados:} En este escenario se debería usar el baricentro ya que como explicamos anteriormente, es más rápido que el circuncentro y se ve menos afectado por el ruido siempre que haya un nivel mínimo de eliminaciones. En el caso de que haya mucha eliminación, para un resultado preciso se opta por circuncentro siempre que el solapamiento no sea excesivo, si no, baricentro.
+
+Si el ruido y porcentaje de eliminaciones es intermedio (0.7 y 0.4 respectivamente) y se busca precisión, recomendamos el circuncentro ya que aunque tarda un poco más en ejecutarse es mucho más preciso que el baricentro.}
+
+\item{\textbf{Clusters concéntricos:} Siempre circuncentro ya que el baricentro trata de hacer una unión entre estos.}
+\end{itemize}
+
+En resumen, el único método que cubre todos los escenarios es el circuncentro y siempre va a efectuarse de forma correcta, siempre y cuando los datos de entradas no presenten un ruido excesivamente alto. Aunque presente la desventaja de tardar más en devolver una solución creemos que es el método que mejores resultados va a ofrecer.
+
+En cuanto aspectos a mejorar podríamos tratar de crear una heurística capaz de seleccionar siempre por cada iteración 3 puntos similares y no aleatorios a la hora de realizar el circuncentro, ya que esto está provocando problemas de rendimiento en el algoritmo y por ello tarda mucho más de lo que debería.
+
 
 %Bibliografía
 
