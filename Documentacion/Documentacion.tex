@@ -94,7 +94,14 @@ El objetivo por abordar es poder encontrar un patrón en el comportamiento del a
 
 Esto resultará en la realización del código propuesto para resolver el problema de agrupación de puntos que conformen una circunferencia junto a una batería de ejemplos con diferentes configuraciones las cuales explicaremos con el fin de dar a entender lo que sucede, por qué y cómo mejorarlo.
 
+\newpage
 De esta forma, tendremos como conclusión un conjunto de decisiones empíricas para diferentes configuraciones y diferentes escenarios donde podremos ver que nos interesa realizar.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{portada.png}
+\caption{Referencia 1}
+\end{figure}
 
 %Marco teórico
 \clearpage
@@ -165,7 +172,8 @@ En cada iteración realizaremos dos pasos:
 \mu \text{ y } \Sigma \text{ = media y covarianza del cluster}\\
 x \text{ = un punto del conjunto de datos}
 \end{gather}
-	\item Paso M: Una vez calculado el paso anterior recalculamos los parámetros de cada cluster de forma que maximicen las probabilidades de pertenencia de cada punto a su cluster.
+\newpage
+\item Paso M: Una vez calculado el paso anterior recalculamos los parámetros de cada cluster de forma que maximicen las probabilidades de pertenencia de cada punto a su cluster.
 \begin{gather}
 \pi_{j}=\frac{\sum_{n=1}^{N}\gamma_{j}(x_{n})}{\text{N}} \\
 \mu_{j}=\frac{\sum_{n=1}^{N}\gamma_{j}(x_{n})x_{n}}{\sum_{n=1}^{N}\gamma_{j}(x_{n})}\\
@@ -177,7 +185,7 @@ x \text{ = un punto del conjunto de datos}
 
 Las iteraciones se seguiran realizando hasta que se converja, es decir, que los parámetros de las distribuciones no varien mucho con respecto a los de la iteración anterior.\\
 
-Este algoritmo aunque parecido a K-Medias presenta una serie de ventajas. La primera es que gracias a que utiliza además de la media la covarianza los clusters no están limitados a ser circunferencias, sino que pueden tomar cualquier tipo de forma elíptica; lo cual permite que el clustering se pueda realizar de forma correcta en casos en los que para K-Medias sería imposible, por ejemplo, en clusters concéntricos o clusters cuya forma no es circular. Además de esto, al funcionar con probabilidades, los puntos no tienen porqué pertenecer a un único cluster, sino que pueden tener una probabilidad de pertenencia a cada uno.
+Este algoritmo aunque parecido a K-Medias presenta una serie de ventajas. La primera es que gracias a que utiliza además de la media la covarianza los clusters no están limitados a ser circunferencias, sino que pueden tomar cualquier tipo de forma elíptica; lo cual permite que el clustering se pueda realizar de forma correcta en casos en los que para K-Medias sería imposible, por ejemplo, en clusters concéntricos o clusters cuya forma no es circular. Además de esto, al funcionar con probabilidades, los puntos no tienen porqué pertenecer a un único cluster, sino que pueden tener una probabilidad de pertenencia a cada uno.\\
 
 \paragraph{\textbf{Agglomerative Hierarchical Clustering}}
 
@@ -191,6 +199,7 @@ Por cada iteración se van combinando dos clusters en uno. Los clusters que se u
 
 Se repite hasta que creamos un único cluster que significa que hemos alcanzado el nodo raíz que supondrá un cluster que contenga a todos los demás. 
 
+\clearpage
 La ventaja de este algoritmo es que no requiere que se especifique un número determinado de clusters incluso pemitiéndonos seleccionar con cuantos clusters queremos parar de agruapr gracias  su comportamiento de arbol. Adicionalmente, el algoritmo no es sensitivo respecto a la métrica de distancia seleccionada; todas van a funcionar relativamente igual de bien mientras que en otras técnicas la forma de medir la distancia es crítica y puede cambiar el comportamiento del algoritmo y resultados de forma radical. 
 
 Esta técnica se usa particularmente  cuando los datos que se quieres representar presentan (como el nombre de la técnica indica) una estructura jerárquica y quieres recuperar esta; y esto es una ventaja específica de este algoritmo ya que otras tecnicasd e clustering no pueden. 
@@ -259,11 +268,7 @@ La primera versión de este método calculaba el centro como el baricentro del c
 \caption{Circunferencia calculada usando el baricentro}
 \end{figure}
 
-<<<<<<< HEAD
-Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, según \hyperref[bib:georgeSeif2]{Referencia 3}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.
-=======
-Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, según \hyperref[bib:georgeSeif]{Referencia 3}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.\\
->>>>>>> 4d08abfe42df3715d8757b543c70ac21f208d098
+Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, según \hyperref[bib:georgeSeif]{Referencia 2}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.\\
 
 \begin{figure}[H]
 \centering
@@ -293,11 +298,7 @@ Para la inicialización, desde un inicio se decidió instanciar las circunferenc
 
 En cuanto al criterio de parada, primero se implementó con un número fijo de iteraciones ya que era más sencillo y permitía comprobar el comportamiento del algoritmo con facilidad; aunque finalmente se acabó implementando un criterio de parada basado en que los centros y radios de los clusters no variaran en una cantidad determinada por el usuario, correspondiente al parámetro \textit{precision}. Sin embargo, es necesario aportar un número máximo de iteraciones pues en el caso de utilizar el circuncentro para recalcular los clusters, al tomarse puntos aleatorios, los centros y radios pueden aumentar sustancialmente. Este problema no se produce al utilizar el baricentro.
 
-<<<<<<< HEAD
 Por último, para la presentación final de los datos, se creó la clase  \textit{Solution}; la cual utiliza la información contenida en un objeto \textit{ClusteringSolver} que ya ha realizado el método  \textit{learn}, es decir, ya ha obtenido el resultado del algoritmo. Esta clase nos permite eliminar puntos cuyo grado de pertenencia final sea menor al elegido por el usuario, además de representar los datos de forma gráfica mostrando las circunferencias junto con los puntos coloreados en función del cluster al que pertenecen. Si esta representación es de más de seis clusters,  los colores de puntos pertenecientes a distintas circunferencias se repetirán y no se podrá saber con certeza si la asignación es correcta; aunque aún será visible si las circunferencias se han definido correctamente.
-=======
-Por último, para la presentación final de los datos, se creó la clase  \textit{Solution}; la cual utiliza la información contenida en un objeto \textit{ClusteringSolver} que ya ha realizado el método  \textit{learn}, es decir, ya ha obtenido el resultado del algoritmo. Esta clase nos permite eliminar puntos cuyo grado de pertenencia final sea menor al elegido por el usuario, además de representar los datos de forma gráfica mostrando las circunferencias junto con los puntos coloreados en función del cluster al que pertenecen. Si esta representación es de más de seis clusters,  los colores de puntos pertenecientes a distintas circunferencias se repetirán y no se podrá saber con certeza si la asignación es correcta; aunque aún será visible si las circunferencias se han definido correctamente.\\
->>>>>>> 4d08abfe42df3715d8757b543c70ac21f208d098
 
 Las modificaciones se realizaron una vez implementado todo. Realizando la experimentación se observó que la inicialización de los clusters al ser aleatoria condicionaba mucho el resultado final del algoritmo. De modo, que se decidió investigar sobre ello y se encontró que una técnica bastante utilizada era el lanzamiento del algoritmo con múltiples instancias haciendo uso de una heurística para obtener el mejor resultado de todas ellas. En nuestro caso, la heurística  considera un mejor resultado aquel en el que el sumatorio de las distancias de los puntos a los clusters es menor.
 
@@ -359,6 +360,7 @@ Este es el algorimto principal. Nos limitamos a instanciar un número de inicial
 
 \end{itemize}
 
+\newpage
 \underline{Clase \textit{Solution}}:
 
 Esta clase representa la solución final de haber realizado el algoritmo de asignación de clusters a los puntos, por ello el constructor recibe como parámetro la clase ClusteringSolver. Se limita a devolver el resultado aplicando un filtrado de detección de ruido, para que solo se devuelvan los puntos que realmente considera como suyos.
@@ -372,6 +374,7 @@ Como métodos adicionales tenemos:
 	\item{\textbf{drawSolution(minThreshold)}: Recibe como parámetro el mínimo grado de pertenencia ya que se llama al método auxiliar eraseNoise(minThreshold). Tras eliminar los puntos simplemente nos limitamos a dibujar los puntos con colores para que se pueda ver como se realizó la asignación de puntos a cada cluster.}
 
 \end{itemize}
+\newpage
 
 \subsection{Pseudocódigo}
 
@@ -426,6 +429,7 @@ si \textnormal{dist $<genD$} entonces\\+
 \end{pseudo}
 \end{figure}
 
+\newpage
 \subsection{Elementos descartados}
 
 \textbf{Método para la selección de los tres puntos para realización del circuncentro:}
@@ -449,6 +453,7 @@ Este cambio se realiza simplemente introduciendo la precisión para la cual quie
 
 En nuestro caso, debido al problema explicado anteriormente solo se nos ve beneficiado en el caso en el que los clusters se formen con el total de los puntos (baricentros).
 
+\clearpage
 \subsection{Mejoras}
 
 Como mejora, se implementó una interfaz gráfica dentro de Jupyter Notebook, que nos permite crear ejemplos aleatorios, eliminar de estos puntos, insertar ruido y guardarlos como fichero .csv en la ruta deseada; así como la resolución de estos indicando el número de instancias, clusters, precisión y máximo de iteraciones. Además, se aporta otra interfaz gráfica en la que se puede cargar un archivo .csv y resolverlo con los parámetros antes mencionados. Estos archivos siguen el formato indicado en el fichero README.txt.
@@ -457,17 +462,12 @@ Todo esto se proporciona al usuario a través de la clase \textit{ClusteringUI} 
 
 \section{Resultados}
 
-<<<<<<< HEAD
-Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias concéntricas, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicandoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.
-=======
-Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias concéntricas, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicandoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.\\
->>>>>>> 4d08abfe42df3715d8757b543c70ac21f208d098
+Para llevar a cabo la experimentación se crearon ejemplos para tratar tres escenarios bien diferenciados: circunferencias concéntricas, circunferencias solapadas y circunferencias separadas. Estos fueron probados con la cantidad correcta de clusters, uno más y uno menos. Además, de cada uno de estos ejemplos iniciales se obtuvieron otros cinco añadiéndoles ruido (ruido = 1.5 ó 0.5), eliminándoles puntos (porcentaje de eliminación = 0.6 ó 0.2) y aplicándoles ambos procedimientos (ruido = 0.4 y porcentaje de eliminación = 0.7). Estos fueron probados con la cantidad correcta de clusters únicamente.
 
 El conjunto de ejemplos final ha sido probado con una precisión de 0.001, utilizando tanto el baricentro como el circuncentro, y aplicando las siguientes configuraciones: 1 generación y 10 iteraciones, 50 generaciones y 30 iteraciones; y 100 generaciones y 50 iteraciones. Para la primera configuración se realizaron tres ejecuciones del algoritmo para obtene la media del tiempo de ejecución y el porcentaje de fallos; mientras que para las otras no se consideró necesario ya que consisten en múltiples ejecuciones del algoritmo.
 
 En las tablas de fallos 0 significa que no hubo fallo y 1 que sí.
 
-\newpage
 \subsection{Ejemplo 1: Circunferencias Concéntricas}
 
 %Tablas
@@ -579,6 +579,7 @@ Se puede observar como con una sola generación el porcentaje de fallo es muy al
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.5, Fallo\\}
 \end{figure}
 
+\clearpage
 \textbf{Pruebas con eliminación:}\\
 
 %Eliminación-Baricentro
@@ -629,7 +630,6 @@ Se puede observar como con una sola generación el porcentaje de fallo es muy al
 \caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
 \end{figure}
 
-\newpage
 \subsection{Ejemplo 2: Circunferencias Solapadas}
 
 %Tablas
@@ -662,6 +662,7 @@ De nuevo el porcentaje de fallo es muy alto para una sola generación y se obser
 
 %Capturas
 
+\clearpage
 \textbf{Pruebas con número de clusters:}\\
 
 %Clusters-Baricentro
@@ -720,6 +721,7 @@ De nuevo el porcentaje de fallo es muy alto para una sola generación y se obser
 \caption{Ejemplo 2: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Fallo\\}
 \end{figure}
 
+\newpage
 \textbf{Pruebas con ruido:}\\
 
 %Ruido-Baricentro
@@ -833,7 +835,6 @@ De nuevo el porcentaje de fallo es muy alto para una sola generación y se obser
 \caption{Ejemplo con menor solapamiento: Circuncentro, 100 Generaciones y 50 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de Eliminación = 0.4, Acierto\\}
 \end{figure}
 
-\newpage
 \subsection{Ejemplo 3: Circunferencias Separadas}
 
 %Tablas
@@ -865,7 +866,7 @@ En este ejemplo el porcentaje de fallo con una sola generación es mucho menor a
 \end{figure}
 
 %Capturas
-
+\clearpage
 \textbf{Pruebas con número de clusters:}\\
 
 %Clusters-Baricentro
@@ -942,6 +943,7 @@ En este ejemplo el porcentaje de fallo con una sola generación es mucho menor a
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto -1, Acierto\\}
 \end{figure}
 
+\clearpage
 \textbf{Pruebas con ruido:}\\
 
 %Ruido-Baricentro
@@ -1045,6 +1047,7 @@ En este ejemplo el porcentaje de fallo con una sola generación es mucho menor a
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Fallo\\}
 \end{figure}
 
+\clearpage
 \section{Conclusiones}
 
 Las conclusiones obtenidas tras realizar la experimentación con diferentes ejemplos marca una clara diferencia entre el baricentro y circuncentro y el realizarlo entre una generación y varias.
