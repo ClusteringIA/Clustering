@@ -145,30 +145,30 @@ Este algoritmo presenta ventajas respecto a K-Means ya que como en Mean-Shift no
 Esperanza - Maximización es un algoritmo estadístico para encontrar los parámetros de un modelo cuando los datos tienen variables desconocidas. Estas variables reciben el nombre de variables latentes y se busca optimizarlas utilizando la información de la que disponemos. Consiste en dos pasos:
 \begin{itemize}
 	\item Paso E (Esperanza): Usando los datos disponibles estimamos las variables latentes.\\
-	\item Paso M (Maximización): Basándose en los valores estimados actualizamos el resto de parámetros.\\
+	\item Paso M (Maximización): Basándose en los valores estimados actualizamos el resto de parámetros maximizando el modelo.
 \end{itemize}
 
-En este caso, el modelo será el Modelo de Mezclas Gaussianas. Este asume que los datos de entrada se encuentran organizados siguiendo distribuciones gaussianas. De este modo, nuestros clusters pasarán a ser estas distribuciones las cuales tendrán tres parámetros: la media, la covarianza y la densidad de dicha distribución.
+En este caso, el modelo será el Modelo de Mezclas Gaussianas, el cual asume que los datos de entrada se encuentran organizados siguiendo distribuciones gaussianas. De este modo, nuestros clusters pasarán a ser dichas distribuciones las cuales tendrán tres parámetros: la media, la covarianza y el número de puntos que pertenecen a cada una de ellas, del que podremos obtener la densidad de la distribución.
 
-En la inicialización del algoritmo se elige el número de clusters de forma manual y se definen de forma aleatoria la media y covarianza de cada uno. La inicialización de estos últimos no es tan esencial como en otros algoritmos ya que se optimiza con mucha rapidez.\\
-En cada iteración realizaremos dos pasos:\\
+En la inicialización del algoritmo se elige el número de clusters K de forma manual y se definen de forma aleatoria el resto de parámetros para cada cluster. La inicialización de estos últimos no es tan esencial como en otros algoritmos ya que se optimiza con mucha rapidez.\\
+En cada iteración realizaremos dos pasos:
 
 \begin{itemize}
-	\item Paso E: Para cada punto del conjunto de datos calcularemos la probabilidad de que este pertenezca a cada uno de los clusters. Esta probabilidad es directamente proporcional a la distancia del punto al centro de la distribución gaussiana; ya que al utilizar este tipos de distribución asumimos que la mayoría de puntos se encuentran cercanos al centro del cluster. Se utiliza la siguiente fórmula:\\
-\[r_{ic}=\frac{\pi_{c}N(x_{i}|\mu_{c},\varSigma_{c})}{\Sigma_{c'}(\pi_{c'}N(x_{i}|\mu_{c'},\varSigma_{c'}))}\]
+	\item Paso E: Para cada punto del conjunto de datos calcularemos la probabilidad de que este pertenezca a cada uno de los clusters. Esta probabilidad es directamente proporcional a la distancia del punto al centro de la distribución gaussiana; ya que al utilizar este tipo de distribución asumimos que la mayoría de puntos se encuentran cercanos al centro del cluster. Se utiliza la siguiente fórmula:
 \begin{gather}
-r_{ic} \text{ = probabilidad de que } x_{i} \text{ pertenezca al cluster c} \\
-\text{N = distribucion normal} \\
-\mu_{c} \text{ y } \varSigma_{c} \text{ = media y covarianza de un cluster c} \\
-x_{i} \text{ = un punto del conjunto de datos}
+\gamma_{k}(x)=\frac{\pi_{k}\textit{N}(x|\mu_{k},\Sigma_{k})}{\sum_{j=1}^{K}\pi_{j}\textit{N}(x|\mu_{j},\Sigma_{j})}\\
+\gamma_{k}(x) \text{ = probabilidad de que } x \text{ pertenezca al cluster j}\\
+\pi \text{ = densidad del cluster }\\
+\textit{N}\text{ = Distribucion normal multivariante}\\
+\mu \text{ y } \Sigma \text{ = media y covarianza del cluster}\\
+x \text{ = un punto del conjunto de datos}
 \end{gather}
-
 	\item Paso M: Una vez calculado el paso anterior recalculamos los parámetros de cada cluster de forma que maximicen las probabilidades de pertenencia de cada punto a su cluster.
-
 \begin{gather}
-\text{Densidad = } \Pi=\frac{\text{Nº puntos asignados al cluster}}{\text{Nº total de puntos}} \\
-\mu_{c}=\frac{1}{\text{Nº puntos asignados al cluster}}\Sigma_{i}r_{ic}x_{i}\\
-\varSigma_{c}=\frac{1}{\text{Nº puntos asignados al cluster}}\Sigma_{i}r_{ic}(x_{i}-\mu_{c})^T(x_{i}-\mu_{c})
+\pi_{j}=\frac{\sum_{n=1}^{N}\gamma_{j}(x_{n})}{\text{N}} \\
+\mu_{j}=\frac{\sum_{n=1}^{N}\gamma_{j}(x_{n})x_{n}}{\sum_{n=1}^{N}\gamma_{j}(x_{n})}\\
+\Sigma_{j}=\frac{\sum_{n=1}^{N}\gamma_{j}(x_{n})(x_{n}-\mu_{j})(x_{n}-\mu_{j})^T}{\sum_{n=1}^{N}\gamma_{j}(x_{n})}\\
+\text{N = Número total de puntos}
 \end{gather}
 
 \end{itemize}

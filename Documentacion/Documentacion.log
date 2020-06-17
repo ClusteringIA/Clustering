@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.6.11)  16 JUN 2020 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.6.11)  17 JUN 2020 10:32
 entering extended mode
 **./Documentacion.tex
 (Documentacion.tex
@@ -548,43 +548,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 148--149
-[]\OT1/ptm/m/n/10 Paso M (Max-i-mizaci[]on): Bas[]andose en los val-ores
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
-
- []
-
-
-Underfull \hbox (badness 3635) in paragraph at lines 157--158
-[]\OT1/ptm/m/n/10 Paso E: Para cada punto del con-junto de datos
- []
-
-
-Underfull \hbox (badness 2671) in paragraph at lines 157--158
-\OT1/ptm/m/n/10 a cada uno de los clus-ters. Esta prob-a-bil-i-dad es
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-72.
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (26.56499pt too wide) detected at line 172
-[]
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 176--177
@@ -592,12 +556,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
  []
 
 [3]
-<images/EjemploGenerado.png, id=119, 282.30469pt x 190.46156pt>
+<images/EjemploGenerado.png, id=123, 282.30469pt x 190.46156pt>
 File: images/EjemploGenerado.png Graphic file (type png)
 <use images/EjemploGenerado.png>
 Package pdftex.def Info: images/EjemploGenerado.png  used on input line 207.
 (pdftex.def)             Requested size: 225.84404pt x 152.36943pt.
-<images/ArcoBaricentro.png, id=121, 173.14688pt x 173.14688pt>
+<images/ArcoBaricentro.png, id=125, 173.14688pt x 173.14688pt>
 File: images/ArcoBaricentro.png Graphic file (type png)
 <use images/ArcoBaricentro.png>
 Package pdftex.def Info: images/ArcoBaricentro.png  used on input line 229.
@@ -608,13 +572,13 @@ Underfull \vbox (badness 2213) has occurred while \output is active []
  [4
 
  <./images/EjemploGenerado.png>]
-<images/ArcoBaricentroResultado.png, id=128, 203.25937pt x 189.70876pt>
+<images/ArcoBaricentroResultado.png, id=132, 203.25937pt x 189.70876pt>
 File: images/ArcoBaricentroResultado.png Graphic file (type png)
 <use images/ArcoBaricentroResultado.png>
 Package pdftex.def Info: images/ArcoBaricentroResultado.png  used on input line
  235.
 (pdftex.def)             Requested size: 162.60771pt x 151.7672pt.
-<images/ArcoCircuncentroResultado.png, id=130, 195.73125pt x 188.95593pt>
+<images/ArcoCircuncentroResultado.png, id=134, 195.73125pt x 188.95593pt>
 File: images/ArcoCircuncentroResultado.png Graphic file (type png)
 <use images/ArcoCircuncentroResultado.png>
 Package pdftex.def Info: images/ArcoCircuncentroResultado.png  used on input li
@@ -668,7 +632,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 [8]
-<images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.png, id=196, 459.21562pt x
+<images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.png, id=200, 459.21562pt x
  307.1475pt>
 File: images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.png Graphic file (typ
 e png)
@@ -676,7 +640,7 @@ e png)
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.pn
 g  used on input line 441.
 (pdftex.def)             Requested size: 229.60724pt x 153.57336pt.
-<images/Experimentacion/Ejemplo1/Ejemplo1Completo.png, id=197, 366.61969pt x 23
+<images/Experimentacion/Ejemplo1/Ejemplo1Completo.png, id=201, 366.61969pt x 23
 0.36063pt>
 File: images/Experimentacion/Ejemplo1/Ejemplo1Completo.png Graphic file (type p
 ng)
@@ -684,7 +648,7 @@ ng)
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/Ejemplo1Completo.png  
 used on input line 447.
 (pdftex.def)             Requested size: 219.97351pt x 138.21742pt.
-<images/Experimentacion/Ejemplo1/Ejemplo1Fallos.png, id=198, 283.81032pt x 223.
+<images/Experimentacion/Ejemplo1/Ejemplo1Fallos.png, id=202, 283.81032pt x 223.
 58531pt>
 File: images/Experimentacion/Ejemplo1/Ejemplo1Fallos.png Graphic file (type png
 )
@@ -695,7 +659,7 @@ ed on input line 453.
  [9 <./images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.png> <./images/Exper
 imentacion/Ejemplo1/Ejemplo1Completo.png> <./images/Experimentacion/Ejemplo1/Ej
 emplo1Fallos.png>]
-<images/Experimentacion/Ejemplo1/Ejemplo1.png, id=209, 280.79906pt x 190.46156p
+<images/Experimentacion/Ejemplo1/Ejemplo1.png, id=213, 280.79906pt x 190.46156p
 t>
 File: images/Experimentacion/Ejemplo1/Ejemplo1.png Graphic file (type png)
 <use images/Experimentacion/Ejemplo1/Ejemplo1.png>
@@ -707,7 +671,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png, id=210, 286.82156pt x 237.8
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png, id=214, 286.82156pt x 237.8
 8875pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png Graphic file (type png)
 
@@ -715,12 +679,16 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png Graphic file (type png)
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png  use
 d on input line 472.
 (pdftex.def)             Requested size: 186.4318pt x 154.62584pt.
-
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+73.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 Underfull \hbox (badness 10000) in paragraph at lines 473--473
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_mc.png, id=211, 280.04625pt x 234.1
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_mc.png, id=215, 280.04625pt x 234.1
 247pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_mc.png Graphic file (type png)
 
@@ -733,7 +701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 479--479
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_lc.png, id=212, 285.31593pt x 239.3
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_lc.png, id=216, 285.31593pt x 239.3
 9438pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_lc.png Graphic file (type png)
 
@@ -746,7 +714,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 485--485
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_cc.png, id=213, 288.3272pt x 238.64
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_cc.png, id=217, 288.3272pt x 238.64
 156pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_cc.png Graphic file (type png)
 
@@ -759,7 +727,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--492
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_correct.png, id=214, 288.3272pt 
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_correct.png, id=218, 288.3272pt 
 x 237.88875pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_correct.png Graphic file (t
 ype png)
@@ -772,7 +740,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 498--498
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong.png, id=215, 286.06876pt x
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong.png, id=219, 286.06876pt x
  240.9pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong.png Graphic file (typ
 e png)
@@ -793,7 +761,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ng> <./images/Experimentacion/Ejemplo1/ej1_b_1_10_lc.png> <./images/Experimenta
 cion/Ejemplo1/ej1_c_1_10_cc.png> <./images/Experimentacion/Ejemplo1/ej1_c_1_10_
 mc_correct.png>]
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_lc.png, id=232, 282.30469pt x 238.6
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_lc.png, id=236, 282.30469pt x 238.6
 4156pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_lc.png Graphic file (type png)
 
@@ -811,7 +779,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_mr.png, id=233, 289.08pt x 237.8887
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_mr.png, id=237, 289.08pt x 237.8887
 5pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_mr.png Graphic file (type png)
 
@@ -824,7 +792,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 519--519
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_lr.png, id=234, 292.09125pt x 235.6
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_lr.png, id=238, 292.09125pt x 235.6
 3031pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_lr.png Graphic file (type png)
 
@@ -837,7 +805,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 525--525
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_mr.png, id=235, 292.09125pt x 238.6
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_mr.png, id=239, 292.09125pt x 238.6
 4156pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_mr.png Graphic file (type png)
 
@@ -850,7 +818,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 532--532
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_correct.png, id=236, 286.82156pt
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_correct.png, id=240, 286.82156pt
  x 234.1247pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_correct.png Graphic file (t
 ype png)
@@ -863,7 +831,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 538--538
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong.png, id=237, 301.8778pt x 
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong.png, id=241, 301.8778pt x 
 242.40562pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong.png Graphic file (typ
 e png)
@@ -888,7 +856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_me.png, id=254, 298.86656pt x 240.9
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_me.png, id=258, 298.86656pt x 240.9
 pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_me.png Graphic file (type png)
 
@@ -901,7 +869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--553
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_le.png, id=255, 304.88907pt x 240.1
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_le.png, id=259, 304.88907pt x 240.1
 4719pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_le.png Graphic file (type png)
 
@@ -914,7 +882,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 559--559
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_me_correct.png, id=256, 290.58563pt
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_me_correct.png, id=260, 290.58563pt
  x 246.1697pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_me_correct.png Graphic file (t
 ype png)
@@ -927,7 +895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 566--566
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong.png, id=257, 304.88907pt x
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong.png, id=261, 304.88907pt x
  239.39438pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong.png Graphic file (typ
 e png)
@@ -940,7 +908,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--572
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_le.png, id=258, 284.56313pt x 240.9
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_le.png, id=262, 284.56313pt x 240.9
 pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_le.png Graphic file (type png)
 
@@ -962,7 +930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_b_1_10_re.png, id=275, 294.34969pt x 240.1
+<images/Experimentacion/Ejemplo1/ej1_b_1_10_re.png, id=279, 294.34969pt x 240.1
 4719pt>
 File: images/Experimentacion/Ejemplo1/ej1_b_1_10_re.png Graphic file (type png)
 
@@ -975,7 +943,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 588--588
 
  []
 
-<images/Experimentacion/Ejemplo1/ej1_c_1_10_re_wrong.png, id=276, 292.09125pt x
+<images/Experimentacion/Ejemplo1/ej1_c_1_10_re_wrong.png, id=280, 292.09125pt x
  241.65282pt>
 File: images/Experimentacion/Ejemplo1/ej1_c_1_10_re_wrong.png Graphic file (typ
 e png)
@@ -988,7 +956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 594--594
 
  []
 
-<images/Experimentacion/Ejemplo2/Ejemplo2Ejecuciones.png, id=277, 450.9347pt x 
+<images/Experimentacion/Ejemplo2/Ejemplo2Ejecuciones.png, id=281, 450.9347pt x 
 303.38344pt>
 File: images/Experimentacion/Ejemplo2/Ejemplo2Ejecuciones.png Graphic file (typ
 e png)
@@ -996,7 +964,7 @@ e png)
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/Ejemplo2Ejecuciones.pn
 g  used on input line 603.
 (pdftex.def)             Requested size: 225.4668pt x 151.69135pt.
-<images/Experimentacion/Ejemplo2/Ejemplo2Completo.png, id=278, 365.86688pt x 22
+<images/Experimentacion/Ejemplo2/Ejemplo2Completo.png, id=282, 365.86688pt x 22
 6.59656pt>
 File: images/Experimentacion/Ejemplo2/Ejemplo2Completo.png Graphic file (type p
 ng)
@@ -1004,7 +972,7 @@ ng)
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/Ejemplo2Completo.png  
 used on input line 609.
 (pdftex.def)             Requested size: 219.52182pt x 135.95897pt.
-<images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png, id=279, 283.81032pt x 224.
+<images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png, id=283, 283.81032pt x 224.
 33812pt>
 File: images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png Graphic file (type png
 )
@@ -1016,7 +984,7 @@ ed on input line 615.
 cion/Ejemplo1/ej1_c_1_10_re_wrong.png> <./images/Experimentacion/Ejemplo2/Ejemp
 lo2Ejecuciones.png> <./images/Experimentacion/Ejemplo2/Ejemplo2Completo.png> <.
 /images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png>]
-<images/Experimentacion/Ejemplo2/Ejemplo2.png, id=295, 280.79906pt x 189.70876p
+<images/Experimentacion/Ejemplo2/Ejemplo2.png, id=299, 280.79906pt x 189.70876p
 t>
 File: images/Experimentacion/Ejemplo2/Ejemplo2.png Graphic file (type png)
 <use images/Experimentacion/Ejemplo2/Ejemplo2.png>
@@ -1028,7 +996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 630--631
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_cc_wrong.png, id=296, 285.31593pt x
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_cc_wrong.png, id=300, 285.31593pt x
  235.63031pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_cc_wrong.png Graphic file (typ
 e png)
@@ -1041,7 +1009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 636--636
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_mc_wrong.png, id=297, 288.3272pt x 
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_mc_wrong.png, id=301, 288.3272pt x 
 237.88875pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_mc_wrong.png Graphic file (typ
 e png)
@@ -1054,7 +1022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 642--642
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct.png, id=298, 283.0575pt 
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct.png, id=302, 283.0575pt 
 x 240.14719pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct.png Graphic file (t
 ype png)
@@ -1070,7 +1038,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 648--648
 
 Underfull \vbox (badness 2393) has occurred while \output is active []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong.png, id=299, 285.31593pt x
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong.png, id=303, 285.31593pt x
  239.39438pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong.png Graphic file (typ
 e png)
@@ -1083,7 +1051,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 654--654
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_correct.png, id=300, 285.31593pt
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_correct.png, id=304, 285.31593pt
  x 240.14719pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_correct.png Graphic file (t
 ype png)
@@ -1096,7 +1064,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 661--661
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_wrong.png, id=301, 289.83281pt x
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_wrong.png, id=305, 289.83281pt x
  242.40562pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_wrong.png Graphic file (typ
 e png)
@@ -1117,7 +1085,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 0_mc_wrong.png> <./images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct.png> <
 ./images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong.png> <./images/Experiment
 acion/Ejemplo2/ej2_c_1_10_cc_correct.png>]
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_correct.png, id=318, 280.79906pt
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_correct.png, id=322, 280.79906pt
  x 239.39438pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_correct.png Graphic file (t
 ype png)
@@ -1130,7 +1098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 673--673
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_wrong.png, id=319, 293.59688pt x
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_wrong.png, id=323, 293.59688pt x
  240.14719pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_wrong.png Graphic file (typ
 e png)
@@ -1143,7 +1111,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 679--679
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_lc_wrong.png, id=320, 289.08pt x 23
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_lc_wrong.png, id=324, 289.08pt x 23
 8.64156pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_lc_wrong.png Graphic file (typ
 e png)
@@ -1164,7 +1132,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 688--689
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong.png, id=321, 283.81032pt x
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong.png, id=325, 283.81032pt x
  237.13594pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong.png Graphic file (typ
 e png)
@@ -1177,7 +1145,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.png, id=322, 280.79906pt x
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.png, id=326, 280.79906pt x
  237.88875pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.png Graphic file (typ
 e png)
@@ -1190,7 +1158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 700--700
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong.png, id=323, 282.30469pt x
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong.png, id=327, 282.30469pt x
  240.9pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong.png Graphic file (typ
 e png)
@@ -1211,7 +1179,7 @@ rimentacion/Ejemplo2/ej2_c_1_10_mc_correct.png> <./images/Experimentacion/Ejemp
 lo2/ej2_c_1_10_mc_wrong.png> <./images/Experimentacion/Ejemplo2/ej2_c_1_10_lc_w
 rong.png> <./images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong.png> <./images
 /Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.png>]
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong.png, id=340, 284.56313pt x
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong.png, id=344, 284.56313pt x
  238.64156pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong.png Graphic file (typ
 e png)
@@ -1239,7 +1207,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 716--717
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_me_wrong.png, id=341, 283.0575pt x 
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_me_wrong.png, id=345, 283.0575pt x 
 236.38312pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_me_wrong.png Graphic file (typ
 e png)
@@ -1252,7 +1220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 722--722
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.png, id=342, 280.79906pt x
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.png, id=346, 280.79906pt x
  239.39438pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.png Graphic file (typ
 e png)
@@ -1265,7 +1233,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 728--728
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_me_wrong.png, id=343, 285.31593pt x
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_me_wrong.png, id=347, 285.31593pt x
  238.64156pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_me_wrong.png Graphic file (typ
 e png)
@@ -1278,7 +1246,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 735--735
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong.png, id=344, 286.06876pt x
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong.png, id=348, 286.06876pt x
  239.39438pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong.png Graphic file (typ
 e png)
@@ -1300,7 +1268,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 745--746
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.png, id=361, 283.0575pt x 
+<images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.png, id=365, 283.0575pt x 
 237.13594pt>
 File: images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.png Graphic file (typ
 e png)
@@ -1313,7 +1281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 751--751
 
  []
 
-<images/Experimentacion/Ejemplo2/ej2_c_1_10_re_wrong.png, id=362, 284.56313pt x
+<images/Experimentacion/Ejemplo2/ej2_c_1_10_re_wrong.png, id=366, 284.56313pt x
  240.14719pt>
 File: images/Experimentacion/Ejemplo2/ej2_c_1_10_re_wrong.png Graphic file (typ
 e png)
@@ -1332,7 +1300,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 760--761
  []
 
 <images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoMaxRui
-do.png, id=363, 281.55188pt x 192.72pt>
+do.png, id=367, 281.55188pt x 192.72pt>
 File: images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoM
 axRuido.png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoMa
@@ -1341,7 +1309,7 @@ Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/Ejempl
 oMenorSolapamientoMaxRuido.png  used on input line 765.
 (pdftex.def)             Requested size: 225.24179pt x 154.1762pt.
 <images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct.png, 
-id=364, 285.31593pt x 242.40562pt>
+id=368, 285.31593pt x 242.40562pt>
 File: images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct.
 png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct.p
@@ -1355,7 +1323,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 772--772
  []
 
 <images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_mr_correct.png, 
-id=365, 288.3272pt x 238.64156pt>
+id=369, 288.3272pt x 238.64156pt>
 File: images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_mr_correct.
 png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_mr_correct.p
@@ -1379,7 +1347,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 781--782
  []
 
 <images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoElimRu
-ido.png, id=366, 282.30469pt x 189.70876pt>
+ido.png, id=370, 282.30469pt x 189.70876pt>
 File: images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoE
 limRuido.png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoEl
@@ -1388,7 +1356,7 @@ Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/Ejempl
 oMenorSolapamientoElimRuido.png  used on input line 785.
 (pdftex.def)             Requested size: 225.84404pt x 151.7672pt.
 <images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct.png, 
-id=367, 286.82156pt x 239.39438pt>
+id=371, 286.82156pt x 239.39438pt>
 File: images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct.
 png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct.p
@@ -1408,7 +1376,7 @@ n/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct.png> <./images/Experimentac
 ion/EjemploMenorSolapamiento/ejms_c_100_50_mr_correct.png> <./images/Experiment
 acion/EjemploMenorSolapamiento/EjemploMenorSolapamientoElimRuido.png>]
 <images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_re_correct.png, 
-id=384, 284.56313pt x 243.15843pt>
+id=388, 284.56313pt x 243.15843pt>
 File: images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_re_correct.
 png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_re_correct.p
@@ -1421,7 +1389,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 798--798
 
  []
 
-<images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.png, id=385, 451.6875pt x 
+<images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.png, id=389, 451.6875pt x 
 304.88907pt>
 File: images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.png Graphic file (typ
 e png)
@@ -1429,7 +1397,7 @@ e png)
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.pn
 g  used on input line 807.
 (pdftex.def)             Requested size: 225.84319pt x 152.44415pt.
-<images/Experimentacion/Ejemplo3/Ejemplo3Completo.png, id=386, 365.86688pt x 22
+<images/Experimentacion/Ejemplo3/Ejemplo3Completo.png, id=390, 365.86688pt x 22
 8.10219pt>
 File: images/Experimentacion/Ejemplo3/Ejemplo3Completo.png Graphic file (type p
 ng)
@@ -1437,7 +1405,7 @@ ng)
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/Ejemplo3Completo.png  
 used on input line 813.
 (pdftex.def)             Requested size: 219.52182pt x 136.86235pt.
-<images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png, id=387, 284.56313pt x 223.
+<images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png, id=391, 284.56313pt x 223.
 58531pt>
 File: images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png Graphic file (type png
 )
@@ -1445,7 +1413,7 @@ File: images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png Graphic file (type png
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png  us
 ed on input line 819.
 (pdftex.def)             Requested size: 199.19283pt x 156.50864pt.
-<images/Experimentacion/Ejemplo3/Ejemplo3.png, id=388, 286.06876pt x 191.21437p
+<images/Experimentacion/Ejemplo3/Ejemplo3.png, id=392, 286.06876pt x 191.21437p
 t>
 File: images/Experimentacion/Ejemplo3/Ejemplo3.png Graphic file (type png)
 <use images/Experimentacion/Ejemplo3/Ejemplo3.png>
@@ -1461,7 +1429,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 834--835
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_correct.png, id=403, 291.33844pt
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_correct.png, id=407, 291.33844pt
  x 235.63031pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_correct.png Graphic file (t
 ype png)
@@ -1474,7 +1442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 840--840
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_wrong.png, id=404, 290.58563pt x
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_wrong.png, id=408, 290.58563pt x
  237.13594pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_wrong.png Graphic file (typ
 e png)
@@ -1487,7 +1455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 846--846
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct.png, id=405, 292.84406pt
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct.png, id=409, 292.84406pt
  x 240.14719pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct.png Graphic file (t
 ype png)
@@ -1503,7 +1471,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 852--852
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2.png, id=406, 286.06876p
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2.png, id=410, 286.06876p
 t x 236.38312pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2.png Graphic file (
 type png)
@@ -1516,7 +1484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 858--858
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_wrong.png, id=407, 291.33844pt x
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_wrong.png, id=411, 291.33844pt x
  237.13594pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_wrong.png Graphic file (typ
 e png)
@@ -1529,7 +1497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 864--864
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct.png, id=408, 286.06876pt
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct.png, id=412, 286.06876pt
  x 237.88875pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct.png Graphic file (t
 ype png)
@@ -1550,7 +1518,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 _10_cc_wrong.png> <./images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct.png>
  <./images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2.png> <./images/Exper
 imentacion/Ejemplo3/ej3_b_1_10_mc_wrong.png>]
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong.png, id=426, 286.06876pt x
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong.png, id=430, 286.06876pt x
  234.8775pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong.png Graphic file (typ
 e png)
@@ -1563,7 +1531,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 876--876
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_correct.png, id=427, 284.56313pt
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_correct.png, id=431, 284.56313pt
  x 237.88875pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_correct.png Graphic file (t
 ype png)
@@ -1576,7 +1544,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 883--883
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_wrong.png, id=428, 289.08pt x 23
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_wrong.png, id=432, 289.08pt x 23
 5.63031pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_wrong.png Graphic file (typ
 e png)
@@ -1592,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 889--889
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct.png, id=429, 294.34969pt
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct.png, id=433, 294.34969pt
  x 243.91125pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct.png Graphic file (t
 ype png)
@@ -1605,7 +1573,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 895--895
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2.png, id=430, 289.08pt x
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2.png, id=434, 289.08pt x
  240.14719pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2.png Graphic file (
 type png)
@@ -1618,7 +1586,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 901--901
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_lc.png, id=431, 286.06876pt x 241.6
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_lc.png, id=435, 286.06876pt x 241.6
 5282pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_lc.png Graphic file (type png)
 
@@ -1643,7 +1611,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 910--911
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_mr.png, id=448, 298.86656pt x 243.9
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_mr.png, id=452, 298.86656pt x 243.9
 1125pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mr.png Graphic file (type png)
 
@@ -1656,7 +1624,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 916--916
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_correct.png, id=449, 286.82156pt
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_correct.png, id=453, 286.82156pt
  x 241.65282pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_correct.png Graphic file (t
 ype png)
@@ -1669,7 +1637,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 922--922
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_wrong.png, id=450, 290.58563pt x
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_wrong.png, id=454, 290.58563pt x
  236.38312pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_wrong.png Graphic file (typ
 e png)
@@ -1682,7 +1650,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 928--928
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_mr.png, id=451, 298.86656pt x 239.3
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_mr.png, id=455, 298.86656pt x 239.3
 9438pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_mr.png Graphic file (type png)
 
@@ -1695,7 +1663,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 935--935
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_lr.png, id=452, 286.82156pt x 234.8
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_lr.png, id=456, 286.82156pt x 234.8
 775pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_lr.png Graphic file (type png)
 
@@ -1717,7 +1685,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 945--946
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_me.png, id=469, 286.06876pt x 238.6
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_me.png, id=473, 286.06876pt x 238.6
 4156pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_me.png Graphic file (type png)
 
@@ -1730,7 +1698,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 951--951
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_le_correct.png, id=470, 289.08pt x 
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_le_correct.png, id=474, 289.08pt x 
 240.14719pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_le_correct.png Graphic file (t
 ype png)
@@ -1754,7 +1722,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 963--963
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_me_correct.png, id=471, 288.3272pt 
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_me_correct.png, id=475, 288.3272pt 
 x 235.63031pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_me_correct.png Graphic file (t
 ype png)
@@ -1767,7 +1735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 970--970
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong.png, id=472, 286.82156pt x
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong.png, id=476, 286.82156pt x
  234.8775pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong.png Graphic file (typ
 e png)
@@ -1780,7 +1748,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 976--976
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong.png, id=473, 284.56313pt x
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong.png, id=477, 284.56313pt x
  238.64156pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong.png Graphic file (typ
 e png)
@@ -1801,7 +1769,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 986--987
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_b_1_10_re_correct.png, id=489, 283.81032pt
+<images/Experimentacion/Ejemplo3/ej3_b_1_10_re_correct.png, id=493, 283.81032pt
  x 236.38312pt>
 File: images/Experimentacion/Ejemplo3/ej3_b_1_10_re_correct.png Graphic file (t
 ype png)
@@ -1825,7 +1793,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 998--998
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png, id=490, 307.1475pt x 
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png, id=494, 307.1475pt x 
 240.9pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png Graphic file (typ
 e png)
@@ -1923,25 +1891,26 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1068.
  ) 
 Here is how much of TeX's memory you used:
  9554 strings out of 480934
- 175575 string characters out of 2909676
+ 175572 string characters out of 2909676
  431054 words of memory out of 3000000
- 24997 multiletter control sequences out of 15000+200000
- 565618 words of font info for 80 fonts, out of 3000000 for 9000
+ 24994 multiletter control sequences out of 15000+200000
+ 564676 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,16n,43p,914b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on Documentacion.pdf (25 pages, 1287072 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on Documentacion.pdf (25 pages, 1295916 bytes).
 PDF statistics:
- 593 PDF objects out of 1000 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
+ 600 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
  581 words of extra memory for PDF output out of 10000 (max. 10000000)
 
