@@ -18,7 +18,7 @@ Por cada punto hay que ejecutar esa sección dándole a "Run Interact".
 
 Generación y resolución:
 1. Se seleccionan el número de circunferencias, el rango del radio de estas y número de puntos de cada una. Si el número de circunferencias es mayor que 6, al mostrarse la solución, puntos pertenecientes a mismas circunferencias pueden aparecer del mismo color. Tras ejecutarlo se mostrará el ejemplo generado.
-2. Se introduce la ruta donde se guardará el archivo .csv con el ejemplo, el porcentaje de puntos eliminados y la cantidad de ruido. Tras ejecutarlo se mostrará el ejemplo modificado
+2. Se introduce la ruta donde se guardará el archivo .csv con el ejemplo, el porcentaje de puntos eliminados y la cantidad de ruido. Importante que la ruta incluya la extensión del fichero ".csv". Tras ejecutarlo se mostrará el ejemplo modificado
 3. Se seleccionan el número de generaciones, número de clusters, la precisión, el máximo número de iteraciones, el método para calcular las circunferencias (c = Circuncentro, b = Baricentro) y el mínimo grado de pertenencia que no consideramos ruido. Tras ejecutarlo se mostrará la solución.
 
 Carga y resolución:
