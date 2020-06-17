@@ -177,7 +177,27 @@ x \text{ = un punto del conjunto de datos}
 
 Las iteraciones se seguiran realizando hasta que se converja, es decir, que los parámetros de las distribuciones no varien mucho con respecto a los de la iteración anterior.\\
 
-Este algoritmo aunque parecido a K-Medias presenta una serie de ventajas. La primera es que gracias a que utiliza además de la media la covarianza los clusters no están limitados a ser circunferencias, sino que pueden tomar cualquier tipo de forma elíptica; lo cual permite que el clustering se pueda realizar de forma correcta en casos en los que para K-Medias sería imposible, por ejemplo, en clusters concéntricos o clusters cuya forma no es circular. Además de esto, al funcionar con probabilidades, los puntos no tienen porqué pertenecer a un único cluster, sino que pueden tener una probabilidad de pertenencia a cada uno.
+Este algoritmo aunque parecido a K-Medias presenta una serie de ventajas. La primera es que gracias a que utiliza además de la media la covarianza los clusters no están limitados a ser circunferencias, sino que pueden tomar cualquier tipo de forma elíptica; lo cual permite que el clustering se pueda realizar de forma correcta en casos en los que para K-Medias sería imposible, por ejemplo, en clusters concéntricos o clusters cuya forma no es circular. Además de esto, al funcionar con probabilidades, los puntos no tienen porqué pertenecer a un único cluster, sino que pueden tener una probabilidad de pertenencia a cada uno.\\
+
+\paragraph{\textbf{Agglomerative Hierarchical Clustering}}
+
+De este algoritmo existen 2 categorías: desde arriba (top-down) o desde abajo (bottom-up).
+
+Este algoritmo aplicando la categoría \textit{desde abajo} trata cada punto como un único cluster el cual se va uniendo con los demas puntos para ir formando un único cluster. Esto representa una jerarquía de clusters los cuales se representan como árbol. La raíz de este árbol es el único cluster que contiene a todos los demás.
+
+Para aplicar el algoritmo, primero debemos seleccionar la métrica de clasificación, siendo en este caso la distancia entre dos cluster. Existen varias técnicas, como es por ejemplo una técnica conocida como \textit{average linkage} la cual define la distancia entre dos clusters como la distancia media entre los puntos del pirmer cluster y las del segundo. En otras palabras, haces una media de los puntos que conforman un cluster, la media de los que conforman otro y miras la distancia euclídea entre esas medidas.
+
+Por cada iteración se van combinando dos clusters en uno. Los clusters que se unen son aquellos que presentan una menor distancia entre ellos.
+
+Se repite hasta que creamos un único cluster que significa que hemos alcanzado el nodo raíz que supondrá un cluster que contenga a todos los demás. 
+
+La ventaja de este algoritmo es que no requiere que se especifique un número determinado de clusters incluso pemitiéndonos seleccionar con cuantos clusters queremos parar de agruapr gracias  su comportamiento de arbol. Adicionalmente, el algoritmo no es sensitivo respecto a la métrica de distancia seleccionada; todas van a funcionar relativamente igual de bien mientras que en otras técnicas la forma de medir la distancia es crítica y puede cambiar el comportamiento del algoritmo y resultados de forma radical. 
+
+Esta técnica se usa particularmente  cuando los datos que se quieres representar presentan (como el nombre de la técnica indica) una estructura jerárquica y quieres recuperar esta; y esto es una ventaja específica de este algoritmo ya que otras tecnicasd e clustering no pueden. 
+
+Sin embargo, las ventajas que presenta respecto a todo lo relacionado con jerarquía, se pierde en eficencia ya que la complejidad presentada por este algoritmo es del orden de $\mathcal{O}(n^3)$ no como la la complejidad lineal que presenta K-Medias.
+
+Importante destacar que estos algoritmos no lo consideramos relevantes para el objetivo que se nos propone, pero son muy interesantes y presentan alternativas a la hora de agrupar diferentes grupos de puntos. El único que realmente podría sernos de alguna forma util es el DBSCAN ya que no se centra en agrupar puntos tal cual sino como ya comentamos que se centra en la figura que forman.
 
 %Estructura del proyecto
 
