@@ -51,7 +51,7 @@
 		\textit{Dpto. Ciencias de la Computación e Inteligencia Artificial}\\
 		\textit{Universidad de Sevilla}\\
 		Sevilla, España\\
-		vicmunram@us.es
+		vicmunram@alum.us.es
 	}
 	\and	
 	\IEEEauthorblockN{Enrique Reina Gutiérrez}
@@ -60,7 +60,7 @@
 		\textit{Dpto. Ciencias de la Computación e Inteligencia Artificial}\\
 		\textit{Universidad de Sevilla}\\
 		Sevilla, España\\
-		enrreigut@us.es
+		enrreigut@alum.us.es
 	}
 }
 
@@ -268,8 +268,11 @@ La primera versión de este método calculaba el centro como el baricentro del c
 \caption{Circunferencia calculada usando el baricentro}
 \end{figure}
 
-Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, según \hyperref[bib:georgeSeif]{Referencia 2}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.\\
+Por ello, se decidió implementar un segundo método que calculara el centro como el circuncentro del conjunto; ya que con la circunferencia circunscrita nos aseguramos que al menos pase por tres puntos de los proporcionados, y el radio como la distancia desde este a uno de esos puntos. Este se calcula como el punto de corte de las mediatrices de los segmentos que forman los puntos seleccionados, según \hyperref[bib:georgeSeif]{Referencia 2}. El problema de esta forma de calcularlo es que los puntos elegidos hagan que las mediatrices no se corten y no haya solución, lo cual fue solventado haciendo que el cálculo se repitiera hasta que esta existiera.
 
+Posteriormente se diseñó una modificación del cálculo de la circunferencia utilizando el conjunto total de puntos. Dicha modificación se encuentra incluída dentro del método learn de la clase \textit{ClusteringSolver}  formada por las llamadas a los métodos auxiliares \textit{getClustersAssignment(threshold) , groupPointsByCluster(clusterAssignment)} y \textit{calculateCluster(mode,points)}.
+
+\newpage
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.8]{ArcoCircuncentroResultado}
@@ -536,7 +539,7 @@ Se puede observar como con una sola generación el porcentaje de fallo es muy al
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong}
-\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Fallo\\}
+\caption{Ejemplo 1: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto +1, Acierto\\}
 \end{figure}
 
 \begin{figure}[H]
@@ -1037,7 +1040,7 @@ En este ejemplo el porcentaje de fallo con una sola generación es mucho menor a
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong}
+\includegraphics[scale=0.65]{Experimentacion/Ejemplo3/ej3_c_1_10_re_correct}
 \caption{Ejemplo 3: Circuncentro, 1 Generación y 10 Iteraciones,  Nº Clusters Correcto, Ruido = 0.7, Porcentaje de eliminación = 0.4, Acierto\\}
 \end{figure}
 
@@ -1073,6 +1076,7 @@ Si el ruido y porcentaje de eliminaciones es intermedio (0.7 y 0.4 respectivamen
 \item{\textbf{Clusters concéntricos:} Siempre circuncentro ya que el baricentro trata de hacer una unión entre estos.}
 \end{itemize}
 
+\newpage
 En resumen, el único método que cubre todos los escenarios es el circuncentro y siempre va a efectuarse de forma correcta, siempre y cuando los datos de entradas no presenten un ruido excesivamente alto. Aunque presente la desventaja de tardar más en devolver una solución creemos que es el método que mejores resultados va a ofrecer.
 
 En cuanto aspectos a mejorar podríamos tratar de crear una heurística capaz de seleccionar siempre por cada iteración 3 puntos similares y no aleatorios a la hora de realizar el circuncentro, ya que esto está provocando problemas de rendimiento en el algoritmo y por ello tarda mucho más de lo que debería.

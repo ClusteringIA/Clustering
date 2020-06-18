@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.26)  17 JUN 2020 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.26)  17 JUN 2020 13:12
 entering extended mode
 **./Documentacion.tex
 (Documentacion.tex
@@ -593,57 +593,49 @@ File: images/ArcoBaricentroResultado.png Graphic file (type png)
 Package pdftex.def Info: images/ArcoBaricentroResultado.png  used on input line
  267.
 (pdftex.def)             Requested size: 162.60771pt x 151.7672pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
-
- []
-
 <images/ArcoCircuncentroResultado.png, id=144, 195.73125pt x 188.95593pt>
 File: images/ArcoCircuncentroResultado.png Graphic file (type png)
 <use images/ArcoCircuncentroResultado.png>
 Package pdftex.def Info: images/ArcoCircuncentroResultado.png  used on input li
-ne 275.
+ne 278.
 (pdftex.def)             Requested size: 156.58519pt x 151.16493pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [6 <./images/ArcoBaricentro.png> <./images/ArcoBaricentroResultado.png> <./ima
 ges/ArcoCircuncentroResultado.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 []\OT1/ptm/b/n/10 calculateDistanceToCluster[]noAbs(c)\OT1/ptm/m/n/10 : recibe 
 como
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 334--335
+Underfull \hbox (badness 2401) in paragraph at lines 337--338
 \OT1/ptm/m/n/10 rep-re-sentaci[]on de la cir-cun-fer-en-cia acorde con los
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 []\OT1/ptm/b/n/10 calculateWithCircumcenter(points)\OT1/ptm/m/n/10 : Recibe com
 o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 []\OT1/ptm/b/n/10 calculateWithBarycentre(list[]points)\OT1/ptm/m/n/10 : Recibe
  como
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 []\OT1/ptm/b/n/10 getClusterAssignment(threshold)\OT1/ptm/m/n/10 : Recibe como
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 []\OT1/ptm/b/n/10 groupPointsByCluster(cluserAssignment)\OT1/ptm/m/n/10 : Recib
 e
  []
 
 [8]
-Overfull \hbox (7.85588pt too wide) in paragraph at lines 383--429
+Overfull \hbox (7.85588pt too wide) in paragraph at lines 386--432
  [] 
  []
 
@@ -654,7 +646,7 @@ File: images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/Ejemplo1Ejecuciones.pn
-g  used on input line 476.
+g  used on input line 479.
 (pdftex.def)             Requested size: 229.60724pt x 153.57336pt.
 <images/Experimentacion/Ejemplo1/Ejemplo1Completo.png, id=211, 366.61969pt x 23
 0.36063pt>
@@ -662,7 +654,7 @@ File: images/Experimentacion/Ejemplo1/Ejemplo1Completo.png Graphic file (type p
 ng)
 <use images/Experimentacion/Ejemplo1/Ejemplo1Completo.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/Ejemplo1Completo.png  
-used on input line 482.
+used on input line 485.
 (pdftex.def)             Requested size: 219.97351pt x 138.21742pt.
 <images/Experimentacion/Ejemplo1/Ejemplo1Fallos.png, id=212, 283.81032pt x 223.
 58531pt>
@@ -670,17 +662,17 @@ File: images/Experimentacion/Ejemplo1/Ejemplo1Fallos.png Graphic file (type png
 )
 <use images/Experimentacion/Ejemplo1/Ejemplo1Fallos.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/Ejemplo1Fallos.png  us
-ed on input line 488.
+ed on input line 491.
 (pdftex.def)             Requested size: 198.66586pt x 156.50864pt.
 <images/Experimentacion/Ejemplo1/Ejemplo1.png, id=213, 280.79906pt x 190.46156p
 t>
 File: images/Experimentacion/Ejemplo1/Ejemplo1.png Graphic file (type png)
 <use images/Experimentacion/Ejemplo1/Ejemplo1.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/Ejemplo1.png  used on 
-input line 497.
+input line 500.
 (pdftex.def)             Requested size: 182.51721pt x 123.79852pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 
  []
 
@@ -695,15 +687,15 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_cc.png  use
-d on input line 507.
+d on input line 510.
 (pdftex.def)             Requested size: 186.4318pt x 154.62584pt.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-08.
+11.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 508--508
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
 
  []
 
@@ -713,10 +705,10 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_mc.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_mc.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_mc.png  use
-d on input line 513.
+d on input line 516.
 (pdftex.def)             Requested size: 182.0279pt x 152.17924pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--514
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 
  []
 
@@ -726,10 +718,10 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_lc.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_lc.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_lc.png  use
-d on input line 519.
+d on input line 522.
 (pdftex.def)             Requested size: 185.45316pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
 
  []
 
@@ -739,10 +731,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_cc.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_cc.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_cc.png  use
-d on input line 526.
+d on input line 529.
 (pdftex.def)             Requested size: 187.41045pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
 
  []
 
@@ -752,10 +744,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_correct.
-png  used on input line 532.
+png  used on input line 535.
 (pdftex.def)             Requested size: 187.41045pt x 154.62584pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 536--536
 
  []
 
@@ -765,10 +757,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_mc_wrong.pn
-g  used on input line 538.
+g  used on input line 541.
 (pdftex.def)             Requested size: 185.94247pt x 156.58313pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--539
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
 
  []
 
@@ -778,10 +770,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_lc.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_lc.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_lc.png  use
-d on input line 544.
+d on input line 547.
 (pdftex.def)             Requested size: 183.49586pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--545
+Underfull \hbox (badness 10000) in paragraph at lines 548--548
 
  []
 
@@ -793,7 +785,7 @@ acion/Ejemplo1/ej1_b_1_10_mc.png> <./images/Experimentacion/Ejemplo1/ej1_b_1_10
 _lc.png> <./images/Experimentacion/Ejemplo1/ej1_c_1_10_cc.png> <./images/Experi
 mentacion/Ejemplo1/ej1_c_1_10_mc_correct.png> <./images/Experimentacion/Ejemplo
 1/ej1_c_1_10_mc_wrong.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
@@ -803,10 +795,10 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_mr.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_mr.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_mr.png  use
-d on input line 553.
+d on input line 556.
 (pdftex.def)             Requested size: 187.89977pt x 154.62584pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--554
+Underfull \hbox (badness 10000) in paragraph at lines 557--557
 
  []
 
@@ -816,10 +808,10 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_lr.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_lr.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_lr.png  use
-d on input line 559.
+d on input line 562.
 (pdftex.def)             Requested size: 189.85704pt x 153.15788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--560
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
 
  []
 
@@ -829,10 +821,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_mr.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_mr.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_mr.png  use
-d on input line 566.
+d on input line 569.
 (pdftex.def)             Requested size: 189.85704pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
+Underfull \hbox (badness 10000) in paragraph at lines 570--570
 
  []
 
@@ -845,10 +837,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_correct.
-png  used on input line 572.
+png  used on input line 575.
 (pdftex.def)             Requested size: 186.4318pt x 152.17924pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--573
+Underfull \hbox (badness 10000) in paragraph at lines 576--576
 
  []
 
@@ -858,10 +850,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_lr_wrong.pn
-g  used on input line 578.
+g  used on input line 581.
 (pdftex.def)             Requested size: 196.21823pt x 157.56177pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 
  []
 
@@ -870,7 +862,7 @@ cion/Ejemplo1/ej1_b_1_10_mr.png> <./images/Experimentacion/Ejemplo1/ej1_b_1_10_
 lr.png> <./images/Experimentacion/Ejemplo1/ej1_c_1_10_mr.png> <./images/Experim
 entacion/Ejemplo1/ej1_c_1_10_lr_correct.png> <./images/Experimentacion/Ejemplo1
 /ej1_c_1_10_lr_wrong.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
 
  []
 
@@ -880,10 +872,10 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_me.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_me.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_me.png  use
-d on input line 588.
+d on input line 591.
 (pdftex.def)             Requested size: 194.26094pt x 156.58313pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--589
+Underfull \hbox (badness 10000) in paragraph at lines 592--592
 
  []
 
@@ -893,10 +885,10 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_le.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_le.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_le.png  use
-d on input line 594.
+d on input line 597.
 (pdftex.def)             Requested size: 198.17554pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--595
+Underfull \hbox (badness 10000) in paragraph at lines 598--598
 
  []
 
@@ -906,10 +898,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_me_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_me_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_me_correct.
-png  used on input line 601.
+png  used on input line 604.
 (pdftex.def)             Requested size: 188.87842pt x 160.00839pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 605--605
 
  []
 
@@ -919,10 +911,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong.pn
-g  used on input line 607.
+g  used on input line 610.
 (pdftex.def)             Requested size: 198.17554pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--608
+Underfull \hbox (badness 10000) in paragraph at lines 611--611
 
  []
 
@@ -932,10 +924,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_le.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_le.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_le.png  use
-d on input line 613.
+d on input line 616.
 (pdftex.def)             Requested size: 184.96384pt x 156.58313pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--614
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
 
  []
 
@@ -945,7 +937,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 614--614
 n/Ejemplo1/ej1_b_1_10_le.png> <./images/Experimentacion/Ejemplo1/ej1_c_1_10_me_
 correct.png> <./images/Experimentacion/Ejemplo1/ej1_c_1_10_me_wrong.png> <./ima
 ges/Experimentacion/Ejemplo1/ej1_c_1_10_le.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 618--619
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
 
  []
 
@@ -955,10 +947,10 @@ File: images/Experimentacion/Ejemplo1/ej1_b_1_10_re.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo1/ej1_b_1_10_re.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_b_1_10_re.png  use
-d on input line 623.
+d on input line 626.
 (pdftex.def)             Requested size: 191.32501pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--624
+Underfull \hbox (badness 10000) in paragraph at lines 627--627
 
  []
 
@@ -968,10 +960,10 @@ File: images/Experimentacion/Ejemplo1/ej1_c_1_10_re_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo1/ej1_c_1_10_re_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo1/ej1_c_1_10_re_wrong.pn
-g  used on input line 629.
+g  used on input line 632.
 (pdftex.def)             Requested size: 189.85704pt x 157.07246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--630
+Underfull \hbox (badness 10000) in paragraph at lines 633--633
 
  []
 
@@ -981,7 +973,7 @@ File: images/Experimentacion/Ejemplo2/Ejemplo2Ejecuciones.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/Ejemplo2Ejecuciones.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/Ejemplo2Ejecuciones.pn
-g  used on input line 638.
+g  used on input line 641.
 (pdftex.def)             Requested size: 225.4668pt x 151.69135pt.
 <images/Experimentacion/Ejemplo2/Ejemplo2Completo.png, id=293, 365.86688pt x 22
 6.59656pt>
@@ -989,7 +981,7 @@ File: images/Experimentacion/Ejemplo2/Ejemplo2Completo.png Graphic file (type p
 ng)
 <use images/Experimentacion/Ejemplo2/Ejemplo2Completo.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/Ejemplo2Completo.png  
-used on input line 644.
+used on input line 647.
 (pdftex.def)             Requested size: 219.52182pt x 135.95897pt.
 <images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png, id=294, 283.81032pt x 224.
 33812pt>
@@ -997,21 +989,21 @@ File: images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png Graphic file (type png
 )
 <use images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png  us
-ed on input line 650.
+ed on input line 653.
 (pdftex.def)             Requested size: 198.66586pt x 157.03561pt.
 <images/Experimentacion/Ejemplo2/Ejemplo2.png, id=295, 280.79906pt x 189.70876p
 t>
 File: images/Experimentacion/Ejemplo2/Ejemplo2.png Graphic file (type png)
 <use images/Experimentacion/Ejemplo2/Ejemplo2.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/Ejemplo2.png  used on 
-input line 659.
+input line 662.
 (pdftex.def)             Requested size: 182.51721pt x 123.30922pt.
 [14 <./images/Experimentacion/Ejemplo1/ej1_b_1_10_re.png> <./images/Experimenta
 cion/Ejemplo1/ej1_c_1_10_re_wrong.png> <./images/Experimentacion/Ejemplo2/Ejemp
 lo2Ejecuciones.png> <./images/Experimentacion/Ejemplo2/Ejemplo2Completo.png> <.
 /images/Experimentacion/Ejemplo2/Ejemplo2Fallos.png> <./images/Experimentacion/
 Ejemplo2/Ejemplo2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
 
  []
 
@@ -1021,10 +1013,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_cc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_cc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_cc_wrong.pn
-g  used on input line 671.
+g  used on input line 674.
 (pdftex.def)             Requested size: 185.45316pt x 153.15788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
+Underfull \hbox (badness 10000) in paragraph at lines 675--675
 
  []
 
@@ -1034,10 +1026,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_mc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_mc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_mc_wrong.pn
-g  used on input line 677.
+g  used on input line 680.
 (pdftex.def)             Requested size: 187.41045pt x 154.62584pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--678
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 
  []
 
@@ -1047,10 +1039,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_correct.
-png  used on input line 683.
+png  used on input line 686.
 (pdftex.def)             Requested size: 183.98518pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--684
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
 
  []
 
@@ -1060,10 +1052,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_lc_wrong.pn
-g  used on input line 689.
+g  used on input line 692.
 (pdftex.def)             Requested size: 185.45316pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--690
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
 
  []
 
@@ -1073,10 +1065,10 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_correct.
-png  used on input line 696.
+png  used on input line 699.
 (pdftex.def)             Requested size: 185.45316pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 697--697
+Underfull \hbox (badness 10000) in paragraph at lines 700--700
 
  []
 
@@ -1086,10 +1078,10 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_cc_wrong.pn
-g  used on input line 702.
+g  used on input line 705.
 (pdftex.def)             Requested size: 188.38908pt x 157.56177pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--703
+Underfull \hbox (badness 10000) in paragraph at lines 706--706
 
  []
 
@@ -1099,10 +1091,10 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_correct.
-png  used on input line 708.
+png  used on input line 711.
 (pdftex.def)             Requested size: 182.51721pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--709
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
 
  []
 
@@ -1122,10 +1114,10 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_mc_wrong.pn
-g  used on input line 714.
+g  used on input line 717.
 (pdftex.def)             Requested size: 190.8357pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--715
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
 
  []
 
@@ -1135,15 +1127,15 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_lc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_lc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_lc_wrong.pn
-g  used on input line 720.
+g  used on input line 723.
 (pdftex.def)             Requested size: 187.89977pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
 
  []
 
@@ -1153,10 +1145,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wrong.pn
-g  used on input line 730.
+g  used on input line 733.
 (pdftex.def)             Requested size: 184.47452pt x 154.13652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--731
+Underfull \hbox (badness 10000) in paragraph at lines 734--734
 
  []
 
@@ -1166,10 +1158,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.pn
-g  used on input line 736.
+g  used on input line 739.
 (pdftex.def)             Requested size: 182.51721pt x 154.62584pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--737
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 
  []
 
@@ -1179,10 +1171,10 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong.pn
-g  used on input line 743.
+g  used on input line 746.
 (pdftex.def)             Requested size: 183.49586pt x 156.58313pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--744
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
 
  []
 
@@ -1192,20 +1184,20 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_lr_wrong.pn
-g  used on input line 749.
+g  used on input line 752.
 (pdftex.def)             Requested size: 184.96384pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
 
  []
 
@@ -1214,7 +1206,7 @@ erimentacion/Ejemplo2/ej2_c_1_10_mc_wrong.png> <./images/Experimentacion/Ejempl
 o2/ej2_c_1_10_lc_wrong.png> <./images/Experimentacion/Ejemplo2/ej2_b_1_10_mr_wr
 ong.png> <./images/Experimentacion/Ejemplo2/ej2_b_1_10_lr_wrong.png> <./images/
 Experimentacion/Ejemplo2/ej2_c_1_10_mr_wrong.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 753--754
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
 
  []
 
@@ -1224,10 +1216,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_me_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_me_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_me_wrong.pn
-g  used on input line 758.
+g  used on input line 761.
 (pdftex.def)             Requested size: 183.98518pt x 153.6472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 
  []
 
@@ -1237,10 +1229,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.pn
-g  used on input line 764.
+g  used on input line 767.
 (pdftex.def)             Requested size: 182.51721pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 765--765
+Underfull \hbox (badness 10000) in paragraph at lines 768--768
 
  []
 
@@ -1250,10 +1242,10 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_me_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_me_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_me_wrong.pn
-g  used on input line 771.
+g  used on input line 774.
 (pdftex.def)             Requested size: 185.45316pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 775--775
 
  []
 
@@ -1263,10 +1255,10 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong.pn
-g  used on input line 777.
+g  used on input line 780.
 (pdftex.def)             Requested size: 185.94247pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--778
+Underfull \hbox (badness 10000) in paragraph at lines 781--781
 
  []
 
@@ -1274,7 +1266,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 778--778
 imentacion/Ejemplo2/ej2_b_1_10_me_wrong.png> <./images/Experimentacion/Ejemplo2
 /ej2_b_1_10_le_wrong.png> <./images/Experimentacion/Ejemplo2/ej2_c_1_10_me_wron
 g.png> <./images/Experimentacion/Ejemplo2/ej2_c_1_10_le_wrong.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 782--783
+Underfull \hbox (badness 10000) in paragraph at lines 785--786
 
  []
 
@@ -1284,10 +1276,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.pn
-g  used on input line 787.
+g  used on input line 790.
 (pdftex.def)             Requested size: 183.98518pt x 154.13652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 788--788
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
 
  []
 
@@ -1297,15 +1289,15 @@ File: images/Experimentacion/Ejemplo2/ej2_c_1_10_re_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_c_1_10_re_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_c_1_10_re_wrong.pn
-g  used on input line 793.
+g  used on input line 796.
 (pdftex.def)             Requested size: 184.96384pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--794
+Underfull \hbox (badness 10000) in paragraph at lines 797--797
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--798
+Underfull \hbox (badness 10000) in paragraph at lines 800--801
 
  []
 
@@ -1316,7 +1308,7 @@ axRuido.png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoMa
 xRuido.png>
 Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/Ejempl
-oMenorSolapamientoMaxRuido.png  used on input line 802.
+oMenorSolapamientoMaxRuido.png  used on input line 805.
 (pdftex.def)             Requested size: 225.24179pt x 154.1762pt.
 <images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct.png, 
 id=378, 285.31593pt x 242.40562pt>
@@ -1325,10 +1317,10 @@ png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_mr_correct.p
 ng>
 Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/ejms_b
-_100_50_mr_correct.png  used on input line 808.
+_100_50_mr_correct.png  used on input line 811.
 (pdftex.def)             Requested size: 185.45316pt x 157.56177pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
 
  []
 
@@ -1339,20 +1331,20 @@ png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_mr_correct.p
 ng>
 Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/ejms_c
-_100_50_mr_correct.png  used on input line 814.
+_100_50_mr_correct.png  used on input line 817.
 (pdftex.def)             Requested size: 187.41045pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
 
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 818--819
+Underfull \hbox (badness 3579) in paragraph at lines 821--822
 []\OT1/ptm/b/n/10 Ejemplo con menor so-la-pamiento, Ruido = 0.7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--819
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
 
  []
 
@@ -1363,7 +1355,7 @@ limRuido.png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/EjemploMenorSolapamientoEl
 imRuido.png>
 Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/Ejempl
-oMenorSolapamientoElimRuido.png  used on input line 822.
+oMenorSolapamientoElimRuido.png  used on input line 825.
 (pdftex.def)             Requested size: 225.84404pt x 151.7672pt.
 <images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct.png, 
 id=381, 286.82156pt x 239.39438pt>
@@ -1372,10 +1364,10 @@ png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct.p
 ng>
 Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/ejms_b
-_100_50_re_correct.png  used on input line 828.
+_100_50_re_correct.png  used on input line 831.
 (pdftex.def)             Requested size: 186.4318pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--829
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
 
  []
 
@@ -1392,10 +1384,10 @@ png Graphic file (type png)
 <use images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_re_correct.p
 ng>
 Package pdftex.def Info: images/Experimentacion/EjemploMenorSolapamiento/ejms_c
-_100_50_re_correct.png  used on input line 834.
+_100_50_re_correct.png  used on input line 837.
 (pdftex.def)             Requested size: 184.96384pt x 158.0511pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 835--835
+Underfull \hbox (badness 10000) in paragraph at lines 838--838
 
  []
 
@@ -1405,7 +1397,7 @@ File: images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.pn
-g  used on input line 843.
+g  used on input line 846.
 (pdftex.def)             Requested size: 225.84319pt x 152.44415pt.
 <images/Experimentacion/Ejemplo3/Ejemplo3Completo.png, id=400, 365.86688pt x 22
 8.10219pt>
@@ -1413,7 +1405,7 @@ File: images/Experimentacion/Ejemplo3/Ejemplo3Completo.png Graphic file (type p
 ng)
 <use images/Experimentacion/Ejemplo3/Ejemplo3Completo.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/Ejemplo3Completo.png  
-used on input line 849.
+used on input line 852.
 (pdftex.def)             Requested size: 219.52182pt x 136.86235pt.
 <images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png, id=401, 284.56313pt x 223.
 58531pt>
@@ -1421,21 +1413,21 @@ File: images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png Graphic file (type png
 )
 <use images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/Ejemplo3Fallos.png  us
-ed on input line 855.
+ed on input line 858.
 (pdftex.def)             Requested size: 199.19283pt x 156.50864pt.
 <images/Experimentacion/Ejemplo3/Ejemplo3.png, id=402, 286.06876pt x 191.21437p
 t>
 File: images/Experimentacion/Ejemplo3/Ejemplo3.png Graphic file (type png)
 <use images/Experimentacion/Ejemplo3/Ejemplo3.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/Ejemplo3.png  used on 
-input line 864.
+input line 867.
 (pdftex.def)             Requested size: 185.94247pt x 124.28786pt.
 [19 <./images/Experimentacion/EjemploMenorSolapamiento/ejms_b_100_50_re_correct
 .png> <./images/Experimentacion/EjemploMenorSolapamiento/ejms_c_100_50_re_corre
 ct.png> <./images/Experimentacion/Ejemplo3/Ejemplo3Ejecuciones.png> <./images/E
 xperimentacion/Ejemplo3/Ejemplo3Completo.png> <./images/Experimentacion/Ejemplo
 3/Ejemplo3Fallos.png> <./images/Experimentacion/Ejemplo3/Ejemplo3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 870--871
+Underfull \hbox (badness 10000) in paragraph at lines 873--874
 
  []
 
@@ -1445,10 +1437,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_correct.
-png  used on input line 875.
+png  used on input line 878.
 (pdftex.def)             Requested size: 189.36774pt x 153.15788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
+Underfull \hbox (badness 10000) in paragraph at lines 879--879
 
  []
 
@@ -1458,10 +1450,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_cc_wrong.pn
-g  used on input line 881.
+g  used on input line 884.
 (pdftex.def)             Requested size: 188.87842pt x 154.13652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 882--882
+Underfull \hbox (badness 10000) in paragraph at lines 885--885
 
  []
 
@@ -1471,10 +1463,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct.
-png  used on input line 887.
+png  used on input line 890.
 (pdftex.def)             Requested size: 190.34637pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
+Underfull \hbox (badness 10000) in paragraph at lines 891--891
 
  []
 
@@ -1484,10 +1476,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2.png Graphic file (
 type png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_correct2
-.png  used on input line 893.
+.png  used on input line 896.
 (pdftex.def)             Requested size: 185.94247pt x 153.6472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 
  []
 
@@ -1497,10 +1489,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_mc_wrong.pn
-g  used on input line 899.
+g  used on input line 902.
 (pdftex.def)             Requested size: 189.36774pt x 154.13652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 900--900
+Underfull \hbox (badness 10000) in paragraph at lines 903--903
 
  []
 
@@ -1510,10 +1502,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_correct.
-png  used on input line 905.
+png  used on input line 908.
 (pdftex.def)             Requested size: 185.94247pt x 154.62584pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--906
+Underfull \hbox (badness 10000) in paragraph at lines 909--909
 
  []
 
@@ -1523,10 +1515,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_lc_wrong.pn
-g  used on input line 911.
+g  used on input line 914.
 (pdftex.def)             Requested size: 185.94247pt x 152.66856pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--912
+Underfull \hbox (badness 10000) in paragraph at lines 915--915
 
  []
 
@@ -1546,10 +1538,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_correct.
-png  used on input line 918.
+png  used on input line 921.
 (pdftex.def)             Requested size: 184.96384pt x 154.62584pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 919--919
+Underfull \hbox (badness 10000) in paragraph at lines 922--922
 
  []
 
@@ -1559,10 +1551,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_cc_wrong.pn
-g  used on input line 924.
+g  used on input line 927.
 (pdftex.def)             Requested size: 187.89977pt x 153.15788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 925--925
+Underfull \hbox (badness 10000) in paragraph at lines 928--928
 
  []
 
@@ -1572,10 +1564,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct.
-png  used on input line 930.
+png  used on input line 933.
 (pdftex.def)             Requested size: 191.32501pt x 158.54042pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 931--931
+Underfull \hbox (badness 10000) in paragraph at lines 934--934
 
  []
 
@@ -1588,10 +1580,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2.png Graphic file (
 type png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2
-.png  used on input line 936.
+.png  used on input line 939.
 (pdftex.def)             Requested size: 187.89977pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 937--937
+Underfull \hbox (badness 10000) in paragraph at lines 940--940
 
  []
 
@@ -1601,10 +1593,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_lc.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_lc.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_lc.png  use
-d on input line 942.
+d on input line 945.
 (pdftex.def)             Requested size: 185.94247pt x 157.07246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 943--943
+Underfull \hbox (badness 10000) in paragraph at lines 946--946
 
  []
 
@@ -1613,7 +1605,7 @@ imentacion/Ejemplo3/ej3_c_1_10_cc_correct.png> <./images/Experimentacion/Ejempl
 o3/ej3_c_1_10_cc_wrong.png> <./images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_co
 rrect.png> <./images/Experimentacion/Ejemplo3/ej3_c_1_10_mc_correct2.png> <./im
 ages/Experimentacion/Ejemplo3/ej3_c_1_10_lc.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 947--948
+Underfull \hbox (badness 10000) in paragraph at lines 950--951
 
  []
 
@@ -1623,10 +1615,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_mr.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_mr.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_mr.png  use
-d on input line 952.
+d on input line 955.
 (pdftex.def)             Requested size: 194.26094pt x 158.54042pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 953--953
+Underfull \hbox (badness 10000) in paragraph at lines 956--956
 
  []
 
@@ -1636,10 +1628,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_correct.
-png  used on input line 958.
+png  used on input line 961.
 (pdftex.def)             Requested size: 186.4318pt x 157.07246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 959--959
+Underfull \hbox (badness 10000) in paragraph at lines 962--962
 
  []
 
@@ -1649,10 +1641,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_lr_wrong.pn
-g  used on input line 964.
+g  used on input line 967.
 (pdftex.def)             Requested size: 188.87842pt x 153.6472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 965--965
+Underfull \hbox (badness 10000) in paragraph at lines 968--968
 
  []
 
@@ -1662,10 +1654,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_mr.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_mr.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_mr.png  use
-d on input line 971.
+d on input line 974.
 (pdftex.def)             Requested size: 194.26094pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
+Underfull \hbox (badness 10000) in paragraph at lines 975--975
 
  []
 
@@ -1675,10 +1667,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_lr.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_lr.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_lr.png  use
-d on input line 977.
+d on input line 980.
 (pdftex.def)             Requested size: 186.4318pt x 152.66856pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 978--978
+Underfull \hbox (badness 10000) in paragraph at lines 981--981
 
  []
 
@@ -1688,7 +1680,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 978--978
 n/Ejemplo3/ej3_b_1_10_lr_correct.png> <./images/Experimentacion/Ejemplo3/ej3_b_
 1_10_lr_wrong.png> <./images/Experimentacion/Ejemplo3/ej3_c_1_10_mr.png> <./ima
 ges/Experimentacion/Ejemplo3/ej3_c_1_10_lr.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 982--983
+Underfull \hbox (badness 10000) in paragraph at lines 985--986
 
  []
 
@@ -1698,10 +1690,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_me.png Graphic file (type png)
 
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_me.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_me.png  use
-d on input line 987.
+d on input line 990.
 (pdftex.def)             Requested size: 185.94247pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--988
+Underfull \hbox (badness 10000) in paragraph at lines 991--991
 
  []
 
@@ -1711,10 +1703,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_le_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_le_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_le_correct.
-png  used on input line 993.
+png  used on input line 996.
 (pdftex.def)             Requested size: 187.89977pt x 156.0938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 994--994
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
 
  []
 
@@ -1722,10 +1714,10 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_le_wrong.pn
-g  used on input line 999.
+g  used on input line 1002.
 (pdftex.def)             Requested size: 182.51721pt x 155.60449pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
 
  []
 
@@ -1735,10 +1727,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_me_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_me_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_me_correct.
-png  used on input line 1006.
+png  used on input line 1009.
 (pdftex.def)             Requested size: 187.41045pt x 153.15788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1010
 
  []
 
@@ -1748,10 +1740,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong.pn
-g  used on input line 1012.
+g  used on input line 1015.
 (pdftex.def)             Requested size: 186.4318pt x 152.66856pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
 
  []
 
@@ -1761,10 +1753,10 @@ File: images/Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong.pn
-g  used on input line 1018.
+g  used on input line 1021.
 (pdftex.def)             Requested size: 184.96384pt x 155.11516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1019--1019
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1022
 
  []
 
@@ -1772,7 +1764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1019--1019
 cion/Ejemplo3/ej3_b_1_10_le_correct.png> <./images/Experimentacion/Ejemplo3/ej3
 _c_1_10_me_correct.png> <./images/Experimentacion/Ejemplo3/ej3_c_1_10_me_wrong.
 png> <./images/Experimentacion/Ejemplo3/ej3_c_1_10_le_wrong.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1024
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1027
 
  []
 
@@ -1782,10 +1774,10 @@ File: images/Experimentacion/Ejemplo3/ej3_b_1_10_re_correct.png Graphic file (t
 ype png)
 <use images/Experimentacion/Ejemplo3/ej3_b_1_10_re_correct.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_b_1_10_re_correct.
-png  used on input line 1028.
+png  used on input line 1031.
 (pdftex.def)             Requested size: 184.47452pt x 153.6472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1029
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1032
 
  []
 
@@ -1793,112 +1785,115 @@ File: images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo2/ej2_b_1_10_re_wrong.pn
-g  used on input line 1034.
+g  used on input line 1037.
 (pdftex.def)             Requested size: 183.98518pt x 154.13652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1038
 
  []
 
-<images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png, id=504, 307.1475pt x 
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_re_correct.png, id=504, 295.85532pt
+ x 241.65282pt>
+File: images/Experimentacion/Ejemplo3/ej3_c_1_10_re_correct.png Graphic file (t
+ype png)
+<use images/Experimentacion/Ejemplo3/ej3_c_1_10_re_correct.png>
+Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_re_correct.
+png  used on input line 1043.
+(pdftex.def)             Requested size: 192.30367pt x 157.07246pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1044
+
+ []
+
+<images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png, id=505, 307.1475pt x 
 240.9pt>
 File: images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png Graphic file (typ
 e png)
 <use images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png>
 Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.pn
-g  used on input line 1040.
+g  used on input line 1049.
 (pdftex.def)             Requested size: 199.6435pt x 156.58313pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1041
-
- []
-
-File: images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png Graphic file (typ
-e png)
-<use images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png>
-Package pdftex.def Info: images/Experimentacion/Ejemplo3/ej3_c_1_10_re_wrong.pn
-g  used on input line 1046.
-(pdftex.def)             Requested size: 199.6435pt x 156.58313pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
 
  []
 
 [24 <./images/Experimentacion/Ejemplo3/ej3_b_1_10_re_correct.png> <./images/Exp
-erimentacion/Ejemplo3/ej3_c_1_10_re_wrong.png>] [25
+erimentacion/Ejemplo3/ej3_c_1_10_re_correct.png> <./images/Experimentacion/Ejem
+plo3/ej3_c_1_10_re_wrong.png>] [25
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1095
 []\OT1/ptm/m/n/8 Seif, G., Sin fecha. The 5 Clus-ter-ing Al-go-rithms Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1095
 \OT1/ptm/m/n/8 Sci-en-tists Need To Know. [on-line] Medium. Disponible en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1095
 [][]\OT1/ptm/m/n/8 https://towardsdatascience.com/the-5-clustering-algorithms-d
 ata-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1095
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1097
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1101
 []\OT1/ptm/m/n/8 Marta, Sin fecha. Cir-cun-cen-tro, Su-per-Prof -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1097
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1101
 \OT1/ptm/m/n/8 Ma-te-rial Did[]actico [on-line] . Disponible en:
  []
 
 
-Overfull \hbox (42.42009pt too wide) in paragraph at lines 1094--1097
+Overfull \hbox (42.42009pt too wide) in paragraph at lines 1098--1101
 [][]\OT1/ptm/m/n/8 https://www.superprof.es/apuntes/escolar/matematicas/analiti
 ca/recta/circuncentro.html[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1097
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
 []\OT1/ptm/m/n/8 C. Zaiontz, Sin fecha,"Initialize clus-ters k-means++ | Real
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 1101--1102
+Underfull \hbox (badness 7238) in paragraph at lines 1105--1106
 \OT1/ptm/m/n/8 Statis-tics Us-ing Ex-cel", Real-statistics.com. [On-line]. Disp
 onible
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
 \OT1/ptm/m/n/8 en: [][]http://www.real-statistics.com/multivariate-statistics/c
 luster-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
 
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 1105--1108
+Underfull \hbox (badness 4156) in paragraph at lines 1109--1112
 \OT1/ptm/m/n/8 Clus-ter-ing Al-go-rithm Python", An-a-lyt-ics Vid-hya, 2020. [o
 n-line].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1112
 
  []
 
@@ -1913,25 +1908,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1116.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1120.
 [26
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1120.
  (Documentacion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1116.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1120.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1120.
 
 Package rerunfilecheck Info: File `Documentacion.out' has not changed.
 (rerunfilecheck)             Checksum: 6C31AF2081DA0D85586A15EEE328EDAA;1364.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1116.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1120.
  ) 
 Here is how much of TeX's memory you used:
- 9569 strings out of 480930
- 175945 string characters out of 2909547
- 429067 words of memory out of 3000000
- 25006 multiletter control sequences out of 15000+200000
+ 9577 strings out of 480930
+ 176363 string characters out of 2909547
+ 429077 words of memory out of 3000000
+ 25013 multiletter control sequences out of 15000+200000
  564676 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,16n,43p,914b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1946,9 +1941,9 @@ ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on Documentacion.pdf (26 pages, 1735775 bytes).
+Output written on Documentacion.pdf (26 pages, 1748128 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
+ 616 PDF objects out of 1000 (max. 8388607)
  197 named destinations out of 1000 (max. 500000)
- 586 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 591 words of extra memory for PDF output out of 10000 (max. 10000000)
 
